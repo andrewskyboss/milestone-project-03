@@ -1,7 +1,7 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/andrewskyboss/milestone-project-02)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/andrewskyboss/milestone-project-03)
 
-# milestone-project-02 
-# Interactive Front-End Development / Hey Travel
+# milestone-project-03 
+# Backend Development / Cookbook
 
 ![logo](assets/images/homepage.PNG)
 [Live site on Github Pages](https://andrewskyboss.github.io/milestone-project-02)
@@ -9,7 +9,7 @@
 # Author
 Andrej Cybovskij
 
-- [milestone-project-02](#milestone-project-02)
+- [milestone-project-03](#milestone-project-03)
 - [Interactive Front-End Development / Hey Travel](#interactive-front-end-development---hey-travel)
 - [Author](#author)
   * [Project Overview](#project-overview)
@@ -58,7 +58,7 @@ Andrej Cybovskij
 
 - Despite to the existing travel situation, people still wants to travel. They are looking for new destinations and possibilities to go out from home. That is mean that any Travel and destinations websites, this version as well, has very high commercial feature. It has modern design and lot of visual component. Design was build using last UI/UX technologies.
 
-- [Link to a deployed website](https://andrewskyboss.github.io/milestone-project-02)
+- [Link to a deployed website](https://andrewskyboss.github.io/milestone-project-03)
 
 ## UX
 
