@@ -1,7 +1,7 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/andrewskyboss/milestone-project-03)
 
 # milestone-project-03 
-# Backend Development / Cookbook
+# Backend Development / Creative Cooking
 
 ![logo](assets/images/homepage.PNG)
 [Live site on Github Pages](https://andrewskyboss.github.io/milestone-project-02)
