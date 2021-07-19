@@ -3,7 +3,7 @@
 # milestone-project-03 
 # Backend Development / Creative Cooking
 
-![logo](assets/images/homepage.PNG)
+![logo](assets/images/creative-cooking-logo.png)
 [Live site on Github Pages](https://andrewskyboss.github.io/milestone-project-02)
 
 # Author
