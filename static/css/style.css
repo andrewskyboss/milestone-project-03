@@ -1,10 +1,11 @@
 header {
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 100;
 }
 main {
-    /* padding-top: 100px; */
+    padding-top: 100px;
 }
 nav.nav-extended .nav-wrapper {
     min-height: 90px;
