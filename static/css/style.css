@@ -35,6 +35,10 @@ img.header-logo {
     font-size: 40px;
 }
 
+.flash-messages h3 {
+    line-height: 2;
+}
+
 @media only screen and (min-width: 991px) {
 
     nav .brand-logo {
