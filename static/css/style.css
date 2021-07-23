@@ -1,3 +1,23 @@
 body {
     /* background-color: aqua; */
 }
+nav.nav-extended .nav-wrapper {
+    min-height: 90px;
+}
+nav .brand-logo {
+    height: 100%;
+    width: 90px;
+    padding: 5px;
+}
+img.header-logo {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 991px) {
+
+    nav .brand-logo {
+        left: 20px;
+    }
+
+}

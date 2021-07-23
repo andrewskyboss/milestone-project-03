@@ -20,22 +20,28 @@
         <!-- main top navigation -->
         <nav class="nav-extended deep-orange darken-1">
             <div class="nav-wrapper">
-              <a href="#!" class="brand-logo">Logo</a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <a href="#!" class="brand-logo"><img class="header-logo" src="{{url_for('static', filename='images/creative-cooking-logo.svg')}}" alt="logo"></a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="logout.html">Log Out</a></li>
+                <li><a href="register.html">Register</a></li>
               </ul>
             </div>
         </nav>
         <!-- mobile navigation -->
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="logout.html">Log Out</a></li>
+            <li><a href="register.html">Register</a></li>
         </ul>
     </header>
     {% block content %}
@@ -43,8 +49,8 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/script.js')}}"></script>
     {% block scripts %}
     {% endblock %}
