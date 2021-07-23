@@ -29,7 +29,7 @@
                 <li><a href="partners.html">Partners</a></li>
                 <li><a href="login.html">Log In</a></li>
                 <li><a href="logout.html">Log Out</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
               </ul>
             </div>
         </nav>
@@ -41,7 +41,7 @@
             <li><a href="partners.html">Partners</a></li>
             <li><a href="login.html">Log In</a></li>
             <li><a href="logout.html">Log Out</a></li>
-            <li><a href="register.html">Register</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
         </ul>
     </header>
     {% block content %}

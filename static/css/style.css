@@ -26,6 +26,15 @@ img.header-logo {
     height: 100%;
 }
 
+.card .card-image .card-title {
+    left: 50%;
+    top: 50%;
+    bottom: unset;
+    transform: translate3d(-50%, -50%, 0);
+    font-weight: 400;
+    font-size: 40px;
+}
+
 @media only screen and (min-width: 991px) {
 
     nav .brand-logo {
