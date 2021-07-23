@@ -3,19 +3,19 @@
 
     <div class="row">
         <div class="col s12 m8 offset-m2">
-        <div class="card">
+            <div class="card">
                 <div class="card-image">
                     <img src="{{url_for('static', filename='images/project-3-img-028.jpg')}}">
-                    <span class="card-title red-text text-darken-1">Create Account</span>
+                    <span class="card-title light-green-text text-darken-3">Please Log In Here</span>
                 </div>
                 <div class="card-content">
                     <div class="row">
-                        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+                        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
                             <div class="card-panel">
                                 <!-- username -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-user-plus prefix red-text text-darken-1"></i>
+                                        <i class="fas fa-user-cog prefix light-green-text text-darken-3"></i>
                                         <input id="username" name="username" type="text" minlength="5"
                                             maxlength="15" pattern="^[a-zA-Z0-9]{6,18}$" class="validate" required>
                                         <label for="username">Username</label>
@@ -24,7 +24,7 @@
                                 <!-- passowrd -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-user-lock prefix red-text text-darken-1"></i>
+                                        <i class="fas fa-user-lock prefix light-green-text text-darken-3"></i>
                                         <input id="password" name="password" type="password" minlength="5"
                                             maxlength="15" pattern="^[a-zA-Z0-9]{6,18}$" class="validate" required>
                                         <label for="password">Password</label>
@@ -32,8 +32,8 @@
                                 </div>
                                 <!-- register -->
                                 <div class="row">
-                                    <button type="submit" class="col s12 btn-large red darken-1 text-shadow">
-                                        Register <i class="fas fa-sign-in-alt"></i>
+                                    <button type="submit" class="col s12 btn-large light-green darken-3 text-shadow">
+                                        Log In <i class="fas fa-sign-in-alt"></i>
                                     </button>
                                 </div>
                             </div>
@@ -45,10 +45,10 @@
     </div>
 
     <div class="row">
-        <div class="col s12">
+        <div class="col s12 m8 offset-m2">
             <p class="center-align">
-                For Existing Users
-                <a href="{{ url_for('login') }}" class="light-green-text text-darken-3">Log In Here</a>
+                New Here?
+                <a href="{{ url_for('register') }}" class="light-green-text text-darken-3">Create Account</a>
             </p>
         </div>
     </div>

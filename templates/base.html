@@ -18,7 +18,7 @@
 <body>
     <header>
         <!-- main top navigation -->
-        <nav class="nav-extended deep-orange darken-1">
+        <nav class="nav-extended">
             <div class="nav-wrapper">
               <a href="{{ url_for('get_recipes') }}" class="brand-logo"><img class="header-logo" src="{{url_for('static', filename='images/creative-cooking-logo.svg')}}" alt="logo"></a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
@@ -27,7 +27,7 @@
                 <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
                 <li><a href="tips.html">Tips</a></li>
                 <li><a href="partners.html">Partners</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li><a href="{{ url_for('login') }}">Log In</a></li>
                 <li><a href="logout.html">Log Out</a></li>
                 <li><a href="{{ url_for('register') }}">Register</a></li>
               </ul>
@@ -39,7 +39,7 @@
             <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
             <li><a href="tips.html">Tips</a></li>
             <li><a href="partners.html">Partners</a></li>
-            <li><a href="login.html">Log In</a></li>
+            <li><a href="{{ url_for('login') }}">Log In</a></li>
             <li><a href="logout.html">Log Out</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
         </ul>
