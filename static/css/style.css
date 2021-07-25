@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
 
+:root {
+    --color-brand-1: #E53935;
+    --color-brand-2: #558B2F;
+    --color-brand-3: #F57C00;
+    --color-brand-4: #939393;
+    --color-brand-5: #2F2F2F;
+    --color-black: #000000;
+    --color-white: #ffffff;
+  }
+
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -14,7 +24,7 @@ a {
 }
 
 a:hover {
-    color: #F79421;
+    color: var(--color-brand-3);
 }
 
 header {
@@ -31,10 +41,11 @@ main {
 }
 nav.nav-extended .nav-wrapper {
     min-height: 90px;
-    background-color: #ffffff;
+    background-color: var(--color-white);
 }
 nav ul a {
-    color: black;
+    color: var(--color-brand-5);
+    padding: 13px 15px;
 }
 nav .brand-logo {
     height: 100%;
@@ -48,7 +59,7 @@ nav a.sidenav-trigger {
     width: 90px;
     margin: 0 0;
     padding: 0 35px;
-    color: black;
+    color: var(--color-brand-5);
 }
 
 img.header-logo {
@@ -110,11 +121,11 @@ button.btn-small {
 button.btn:hover,
 button.btn-large:hover,
 button.btn-small:hover {
-    background-color: #F79421!important;
+    background-color: var(--color-brand-3)!important;
 }
 .link-text.light-green-text.text-darken-3:hover,
 .link-text.red-text.text-darken-1:hover {
-    color: #F79421!important;
+    color: var(--color-brand-3)!important;
     font-weight: 500;
 }
 

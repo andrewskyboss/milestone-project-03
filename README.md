@@ -155,7 +155,7 @@ This project was built based on the target audience needs. As was mentioned abov
 As I was mentioned above, the color palette were taken to represent colors of Nature. Pale Shades of Blue, Red and green are very pleasant and should associate with water, sun and summer grass. Additionally three shades of grey were used to highlight the colors of Nature. Combination of those colors should create emotional trust and mood of future rest and travel.
 
 - Color palete was created using [Coolors resources](https://coolors.co)
-- ![color scheme](assets/images/color-sheme.PNG)
+- ![color scheme](assets/images/colors-new.png)
 
 #### Typography
 - Elegant Quicksand sans-serif typeface family font, were using in this project for the body text. Body font size is 16px. This body font is easy to read and good for design.
