@@ -28,9 +28,11 @@ def get_homepage():
 @app.route("/get_recipes")
 def get_recipes():
     recipes = list(mongo.db.recipes.find())
-    return render_template("recipes.html", recipes=recipes)
+    return render_template("recipes.html", recipe=recipes)
+
 
 # code is taken from tutorial
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():

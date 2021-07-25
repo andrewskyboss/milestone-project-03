@@ -46,6 +46,13 @@ nav.nav-extended .nav-wrapper {
 nav ul a {
     color: var(--color-brand-5);
     padding: 13px 15px;
+    background-color: transparent;
+    transition: all 0.8s ease;
+}
+
+body > header > nav > div > ul > li > a:hover {
+    background-color: var(--color-brand-3);
+    color: var(--color-white);
 }
 nav .brand-logo {
     height: 100%;
@@ -129,6 +136,19 @@ button.btn-small:hover {
     font-weight: 500;
 }
 
+/* recipes module */
+div.col.s12.m5.l5 {
+    overflow: hidden;
+}
+div.col.s12.m5.l5 > img.recipe-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+}
+div.col.s12.m7.l7 {
+    padding: 20px;
+}
 
 /* break points */
 
