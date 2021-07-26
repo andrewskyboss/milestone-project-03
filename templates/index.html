@@ -6,12 +6,43 @@
     <div class="container">
         <div class="row image-text-row">
             <div class="col s12 m5 l7 image-area">
-                <img class="recipe-image" src="{{url_for('static', filename='images/project-3-img-014b.jpg')}}" alt="">
+                <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-014b.jpg')}}" alt="">
             </div>
       
             <div class="col s12 m7 l5 content-area">
                 <h3 class="subtitle light-green-text text-darken-3 center-align">Recipes</h3>
-                <a href="{{ url_for('get_recipes') }}" class="button col s12 m8 btn-large red darken-1 text-shadow"><i class="fas fa-sign-in-alt"></i> Recipes</a>
+                <p>Get more infrotmation about food preparation</p>
+                <a href="{{ url_for('get_recipes') }}" class="button col s12 m6 btn-large red darken-1 text-shadow">Read More   <i class="far fa-list-alt"></i></a>
+            </div>
+        </div>
+        <div class="row image-text-row">
+            <div class="col s12 m7 l5 content-area">
+                <h3 class="subtitle light-green-text text-darken-3 center-align">Tips</h3>
+                <p>Get more infrotmation about food preparation</p>
+                <a href="{{ url_for('get_recipes') }}" class="button col s12 m6 btn-large red darken-1 text-shadow">Read More <i class="fas fa-info"></i></a>
+            </div>
+            <div class="col s12 m5 l7 image-area">
+                <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-019.jpg')}}" alt="">
+            </div>
+        </div>
+        <div class="row image-text-row">
+            <div class="col s12 m5 l7 image-area">
+                <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-014f.jpg')}}" alt="">
+            </div>
+            <div class="col s12 m7 l5 content-area">
+                <h3 class="subtitle light-green-text text-darken-3 center-align">Our Partners</h3>
+                <p>Get more infrotmation about our business contacts and partners</p>
+                <a href="{{ url_for('get_recipes') }}" class="button col s12 m6 btn-large red darken-1 text-shadow">Read More   <i class="far fa-handshake"></i></a>
+            </div>
+        </div>
+        <div class="row image-text-row">
+            <div class="col s12 m7 l5 content-area">
+                <h3 class="subtitle light-green-text text-darken-3 center-align">Contact Us</h3>
+                <p>Contact us by phone or Email us</p>
+                <a href="{{ url_for('get_recipes') }}" class="button col s12 m6 btn-large red darken-1 text-shadow">Get in touch <i class="fas fa-headset"></i></a>
+            </div>
+            <div class="col s12 m5 l7 image-area">
+                <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-028a.jpg')}}" alt="">
             </div>
         </div>
     </div>

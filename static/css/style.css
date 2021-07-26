@@ -138,7 +138,6 @@ button.btn-small:hover {
 
 /* recipes module */
 
-/* div.col.s12.m5.l7 */
 div.image-text-row {
     height: 40vh;
     overflow: auto;
@@ -163,6 +162,15 @@ div.col.content-area {
 }
 div.col.content-area > a.button {
     margin-left: unset;
+}
+
+/* footer */
+
+footer > div > div > ul.list-inline.social-links {
+    display: inline-flex;
+}
+footer {
+    display: grid;
 }
 
 /* break points */
