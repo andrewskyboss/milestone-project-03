@@ -7,27 +7,30 @@
         {{ recipe.category_name }}<br>
     {% endfor %} -->
 
-    <div class="container">
+    <div class="container-fluid">
         
         <div class="row image-text-row">
             {% for recipe in recipe %}
-            <div class="col s12 m6 l3 image-area">
-                <p>{{ recipe.image_url }}</p>
-                <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-dish-002.jpg')}}" alt="">
-            </div>
-            <div class="col s12 m6 l3 content-area"> 
-                <h3 class="subtitle light-green-text text-darken-3 center-align">{{ recipe.dish_name }}</h3>
-                <p class="subtitle-category"><strong>Category: </strong> {{ recipe.category_name }}</p>
-                <p class="subtitle-cuisine"><strong>Cousine: </strong> {{ recipe.cuisine_name }}</p>
-                <!-- <h4 class="subtitle light-green-text text-darken-3 center-align">Ingredients</h4>
-                <p>{{ recipe.ingredients }}</p>
-                <p>{{ recipe.preparation_steps }}</p>
-                <p>{{ recipe.tools }}</p> -->
-                <p><strong>Author: </strong>{{ recipe.created_by }}</p>
+            <div class="col s12 m12 l6">
+                <div class="col s12 m12 l6 image-area">
+                    <p>{{ recipe.image_url }}</p>
+                    <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-dish-002.jpg')}}" alt="">
+                </div>
+                <div class="col s12 m12 l6 content-area"> 
+                    <h3 class="subtitle light-green-text text-darken-3 center-align">{{ recipe.dish_name }}</h3>
+                    <p class="subtitle-category"><strong>Category: </strong> {{ recipe.category_name }}</p>
+                    <p class="subtitle-cuisine"><strong>Cousine: </strong> {{ recipe.cuisine_name }}</p>
+                    <!-- <h4 class="subtitle light-green-text text-darken-3 center-align">Ingredients</h4>
+                    <p>{{ recipe.ingredients }}</p>
+                    <p>{{ recipe.preparation_steps }}</p>
+                    <p>{{ recipe.tools }}</p> -->
+                    <p><strong>Author: </strong>{{ recipe.created_by }}</p>
+                </div>
+
             </div>
             {% endfor %}
         </div>
-        
+       
     </div>
 
 {% endblock %}

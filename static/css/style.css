@@ -236,6 +236,15 @@ footer > div > div.social-links-container {
 
 }
 
+@media only screen and (max-width: 993px) {
+    div.image-text-row {
+        height: auto;
+        overflow: auto;
+        margin-bottom: 40px;
+    }
+
+}
+
 @media only screen and (max-width: 601px) {
 
     div.image-text-row {
@@ -248,5 +257,7 @@ footer > div > div.social-links-container {
         min-height: 350px;
         order: 2;
     }
+
+
 
 }
