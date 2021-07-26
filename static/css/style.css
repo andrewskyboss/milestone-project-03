@@ -42,6 +42,7 @@ h1, h2, h3 {
 }
 main {
     padding-top: 100px;
+    min-height: calc(100vh - 160px);
 }
 nav.nav-extended .nav-wrapper {
     min-height: 90px;
@@ -172,12 +173,13 @@ div.col.image-area > img.recipe-image {
 }
 div.col.content-area {
     height: 100%;
-    padding: 20px;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+    text-align: center;
 }
 div.col.content-area::before {
     content: '';
@@ -215,6 +217,21 @@ footer {
 
     nav .brand-logo {
         left: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 601px) {
+
+    div.image-text-row {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.col.content-area {
+        min-height: 350px;
+        order: 2;
     }
 
 }
