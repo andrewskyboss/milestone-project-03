@@ -211,6 +211,21 @@ footer {
     display: grid;
 }
 
+footer > div > div > ul > li > a.inline-item {
+    font-size: 30px;
+    padding: 20px 30px;
+}
+
+footer > div.row {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+footer > div > div.social-links-container {
+    width: 100%;
+    border-bottom: 1px solid var(--color-white);
+}
+
 /* break points */
 
 @media only screen and (min-width: 991px) {
