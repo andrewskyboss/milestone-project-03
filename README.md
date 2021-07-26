@@ -53,12 +53,12 @@ Andrej Cybovskij
 
 - Below is a picture of site that shows it in responsive states. 
 [link to check a website to be responsive](http://ami.responsivedesign.is)
-![picture of site](assets/images/responsive-1.PNG)
+![picture of site](assets/images/responsive.png)
 - Hey Travel is a website, where user can find a holiday destination for their needs. For their convenience, there are Map with proposed destinations markers. As well, user can choose a travel package from this website. To get inspiration about destinations, there are lot of visual materials placed in different manner, such as Hero sliders, Grid images and Gallery. As well, user has form to contact website owner to get all necessary information.
 
 - Despite to the existing travel situation, people still wants to travel. They are looking for new destinations and possibilities to go out from home. That is mean that any Travel and destinations websites, this version as well, has very high commercial feature. It has modern design and lot of visual component. Design was build using last UI/UX technologies.
 
-- [Link to a deployed website](https://andrewskyboss.github.io/milestone-project-03)
+- [Link to a deployed website](https://milestone-project-03-ac.herokuapp.com/get_homepage)
 
 ## UX
 
