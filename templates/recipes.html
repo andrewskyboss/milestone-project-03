@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <h3 class="light-green-text text-darken-3 center-align">Recipes</h3>
+    <h3 class="title red-text text-darken-1 center-align">Recipes</h3>
 
     <!-- {% for recipe in recipe %}
         {{ recipe.dish_name }}<br>
@@ -8,22 +8,24 @@
     {% endfor %} -->
 
     <div class="container">
-        {% for recipe in recipe %}
         
-        <div class="row">
-            <div class="col s12 m5 l5">
+        <div class="row image-text-row">
+            {% for recipe in recipe %}
+            <div class="col s12 m6 l3 image-area">
+                <p>{{ recipe.image_url }}</p>
                 <img class="recipe-image" src="{{url_for('static', filename='images/project-3-img-007.jpg')}}" alt="">
             </div>
-            <div class="col s12 m7 l7"> 
-                <h3>{{ recipe.dish_name }}</h3>
-                <p>{{ recipe.category_name }}</p>
-                 <p>{{ recipe.cuisine_name }}</p>
+            <div class="col s12 m6 l3 content-area"> 
+                <h3 class="subtitle light-green-text text-darken-3 center-align">{{ recipe.dish_name }}</h3>
+                <p class="subtitle-category"><strong>Category: </strong> {{ recipe.category_name }}</p>
+                <p class="subtitle-cuisine"><strong>Cousine: </strong> {{ recipe.cuisine_name }}</p>
+                <!-- <h4 class="subtitle light-green-text text-darken-3 center-align">Ingredients</h4>
                 <p>{{ recipe.ingredients }}</p>
                 <p>{{ recipe.preparation_steps }}</p>
-                <p>{{ recipe.tools }}</p>
-                <p>{{ recipe.created_by }}</p>
+                <p>{{ recipe.tools }}</p> -->
+                <p><strong>Author: </strong>{{ recipe.created_by }}</p>
             </div>
-        {% endfor %}
+            {% endfor %}
         </div>
         
     </div>
