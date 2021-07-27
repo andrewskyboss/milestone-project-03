@@ -40,8 +40,8 @@
                                         <i class="fas fa-list prefix light-green-text text-darken-3"></i>
                                         <select id="cuisine_name" name="cuisine_name" class="validate" required>
                                             <option value="" disabled selected>Choose Cuisine</option>
-                                            {% for cuisines in cuisine %}
-                                                <option value="{{ cuisines.cuisine_name }}">{{ cuisines.cuisine_name }}</option>
+                                            {% for cuisine in cuisine %}
+                                                <option value="{{ cuisine.cuisine_name }}">{{ cuisine.cuisine_name }}</option>
                                             {% endfor %}
                                         </select>
                                         <label for="cuisine_name">Select Cuisine</label>
