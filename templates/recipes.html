@@ -13,8 +13,9 @@
             {% for recipe in recipe %}
             <div class="col s12 m12 l6">
                 <div class="col s12 m12 l6 image-area">
-                    <p>{{ recipe.image_url }}</p>
-                    <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-dish-002.jpg')}}" alt="">
+                    <!-- <p>{{ recipe.image_url }}</p> -->
+                    <!-- <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-dish-002.jpg')}}" alt=""> -->
+                    <img class="recipe-image responsive-img" src="{{ recipe.image_url }}" alt="">
                 </div>
                 <div class="col s12 m12 l6 content-area"> 
                     <h3 class="subtitle light-green-text text-darken-3 center-align">{{ recipe.dish_name }}</h3>
