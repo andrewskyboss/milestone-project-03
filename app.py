@@ -89,7 +89,7 @@ def login():
     return render_template("login.html")
 
 
-
+    # loads users profile function
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from db
@@ -101,7 +101,7 @@ def profile(username):
     return redirect(url_for("login"))
 
 
-
+    # log out user function
 @app.route("/logout")
 def logout():
     # remove user from session cookie
@@ -110,7 +110,7 @@ def logout():
     return redirect(url_for("login"))
 
 
-
+    # add new recipe to database
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
@@ -135,7 +135,7 @@ def add_recipe():
     cuisine=cuisine)
 
 
-
+    # edit recipe function
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
     if request.method == "POST":
@@ -161,6 +161,7 @@ def edit_recipe(recipe_id):
     categories=categories, cuisine=cuisine)
 
 
+    # delete recipe function
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
@@ -168,14 +169,14 @@ def delete_recipe(recipe_id):
     return redirect(url_for("get_recipes"))
 
 
-
+    # get categories from database
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
 
-
+    # adding category
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
     if request.method == "POST":
@@ -183,12 +184,13 @@ def add_category():
             "category_name": request.form.get("category_name")
         }
         mongo.db.categories.insert_one(category)
-        flash("New Category Added")
+        flash("New Category is Added")
         return redirect(url_for("get_categories"))
 
     return render_template("add_category.html")
 
 
+    # edit category
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
     if request.method == "POST":
@@ -196,7 +198,7 @@ def edit_category(category_id):
             "category_name": request.form.get("category_name")
         }
         mongo.db.categories.update({"_id": ObjectId(category_id)}, submit)
-        flash("Category Successfully Updated")
+        flash("Category was Successfully Updated")
         return redirect(url_for("get_categories"))
 
     category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})

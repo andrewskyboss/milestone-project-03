@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div class="card">
+                <div class="card-image">
+                    <img class="responsive-img" src="{{url_for('static', filename='images/project-3-img-014e.jpg')}}">
+                    <span class="card-title light-green-text text-darken-3 center-align">Add new Category</span>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_category') }}">
+                            <div class="card-panel">
+                                <!-- Category name -->
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="fas fa-pencil-alt prefix light-green-text text-darken-3"></i>
+                                        <input id="category_name" name="category_name" type="text" minlength="2"
+                                            maxlength="30" class="validate" required>
+                                        <label for="category_name">Add Category Name</label>
+                                    </div>
+                                </div>
+                                <!-- Add Category -->
+                                <div class="row">
+                                    <button type="submit" class="col s12 btn-large light-green darken-3 text-shadow">
+                                        Add Category <i class="fas fa-plus-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <p class="center-align">
+                You can
+                <a href="{{ url_for('logout') }}" class="link-text light-green-text text-darken-3">Log Out</a>
+            </p>
+        </div>
+    </div>
+
+{% endblock %}
