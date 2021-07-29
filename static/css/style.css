@@ -39,6 +39,7 @@ header {
 }
 h1, h2, h3 {
     font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
 }
 main {
     padding-top: 100px;
@@ -113,6 +114,7 @@ img.header-logo-mobile {
     transform: translate3d(-50%, -50%, 0);
     font-weight: 400;
     font-size: 40px;
+    text-transform: capitalize;
 }
 
 .flash-messages h3 {
