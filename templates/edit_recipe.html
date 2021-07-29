@@ -110,9 +110,14 @@
 
                                 <!-- Add recipe -->
                                 <div class="row">
-                                    <button type="submit" class="col s12 btn-large light-green darken-3 text-shadow">
-                                        Edit recipe <i class="fas fa-edit"></i>
-                                    </button>
+                                    <div class="col s12 center-align">
+                                        <a href="{{ url_for('get_recipes') }}" class="col s6 btn-large red darken-1 text-shadow">
+                                            Cancel <i class="fas fa-times-circle right"></i>
+                                        </a>
+                                        <button type="submit" class="col s6 btn-large light-green darken-3 text-shadow">
+                                            Edit recipe <i class="fas fa-edit"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
