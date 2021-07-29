@@ -35,7 +35,7 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_homepage') }}">Home</a></li>
                     <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
-                    <li><a href="tips.html">Tips</a></li>
+                    <li><a href="templates/tips.html">Tips</a></li>
                     <li><a href="partners.html">Partners</a></li>
                 {% if session.user %}
                     <li><a class="user-link" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
