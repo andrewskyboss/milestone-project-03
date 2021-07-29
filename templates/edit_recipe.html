@@ -5,8 +5,8 @@
         <div class="col s12 m8 offset-m2">
             <div class="card">
                 <div class="card-image">
-                    <img class="responsive-img" src="{{url_for('static', filename='images/project-3-img-014e.jpg')}}">
-                    <span class="card-title light-green-text text-darken-3 center-align">Edit recipe</span>
+                    <img class="responsive-img" src="{{url_for('static', filename='images/project-3-img-014g.jpg')}}">
+                    <span class="card-title blue-grey-text text-lighten-5 center-align">Edit recipe</span>
                 </div>
                 <div class="card-content">
                     <div class="row">
@@ -28,7 +28,11 @@
                                         <select id="category_name" name="category_name" class="validate" required>
                                             <option value="" disabled selected>Choose Category</option>
                                             {% for category in categories %}
-                                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                                {% if category.category_name == recipe.category_name %}
+                                                    <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                                                {% else %}
+                                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                                {% endif %}
                                             {% endfor %}
                                         </select>
                                         <label for="category_name">Select Dish Category</label>
@@ -41,7 +45,11 @@
                                         <select id="cuisine_name" name="cuisine_name" class="validate" required>
                                             <option value="" disabled selected>Choose Cuisine</option>
                                             {% for cuisine in cuisine %}
-                                                <option value="{{ cuisine.cuisine_name }}">{{ cuisine.cuisine_name }}</option>
+                                                {% if cuisine.cuisine_name == recipe.cuisine_name %}
+                                                    <option value="{{ cuisine.cuisine_name }}" selected>{{ cuisine.cuisine_name }}</option>
+                                                {% else %}
+                                                    <option value="{{ cuisine.cuisine_name }}">{{ cuisine.cuisine_name }}</option>
+                                                {% endif %}
                                             {% endfor %}
                                         </select>
                                         <label for="cuisine_name">Select Cuisine</label>
@@ -83,13 +91,13 @@
                                     </div>
                                 </div>
                                 <!-- image description -->
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="input-field col s12">
                                         <i class="far fa-image prefix light-green-text text-darken-3"></i>
                                         <input id="img_description" name="img_description" type="text" value="{{ recipe.img_description }}" class="validate" required>
                                         <label for="img_description">Add Image description</label>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <!-- Tools -->
                                 <div class="row">

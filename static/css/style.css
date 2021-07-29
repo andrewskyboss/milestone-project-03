@@ -54,9 +54,17 @@ nav ul a {
     background-color: transparent;
     transition: all 0.8s ease;
 }
-
-body > header > nav > div > ul > li > a:hover {
+nav ul a.user-link {
     background-color: var(--color-brand-3);
+    color: var(--color-white);
+}
+
+nav > div > ul > li > a:hover {
+    background-color: var(--color-brand-3);
+    color: var(--color-white);
+}
+nav > div > ul > li > a.user-link:hover {
+    background-color: var(--color-brand-1);
     color: var(--color-white);
 }
 nav .brand-logo {
