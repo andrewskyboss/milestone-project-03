@@ -160,6 +160,12 @@ def edit_recipe(recipe_id):
     categories=categories, cuisine=cuisine)
 
 
+@app.route("/get_recipe/<recipe_id>")
+def get_recipe(recipe_id):
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("recipe.html", recipe=recipe)
+
+
     # delete recipe function
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
