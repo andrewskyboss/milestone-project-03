@@ -28,7 +28,7 @@
                             </div>
                             <div class="card-action">
                                 <a href="{{ url_for('edit_cuisine', cuisine_id=cuisine._id) }}" class="btn-large red darken-1 text-shadow">Edit</a>
-                                <a href="#" class="btn-large red darken-1 text-shadow">Delete</a>
+                                <a href="{{ url_for('delete_cuisine', cuisine_id=cuisine._id) }}" class="btn-large red darken-1 text-shadow">Delete</a>
                             </div>
                         </div>
                     </div>

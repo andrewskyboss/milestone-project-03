@@ -31,9 +31,8 @@ def get_recipes():
     return render_template("recipes.html", recipe=recipes)
 
 
-# code is taken from tutorial
 
-
+    # code is based on mini project tutorial
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -59,8 +58,8 @@ def register():
 
     return render_template("register.html")
 
-# code is taken from tutorial
 
+    # code is based on mini project tutorial
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -248,6 +247,14 @@ def edit_cuisine(cuisine_id):
 
     cuisine = mongo.db.cuisine.find_one({"_id": ObjectId(cuisine_id)})
     return render_template("edit_cuisine.html", cuisine=cuisine)
+
+
+    # delete cuisine
+@app.route("/delete_cuisine/<cuisine_id>")
+def delete_cuisine(cuisine_id):
+    mongo.db.cuisine.remove({"_id": ObjectId(cuisine_id)})
+    flash("Cuisine is Successfully Deleted")
+    return redirect(url_for("get_cuisines"))
 
 
     # runs application
