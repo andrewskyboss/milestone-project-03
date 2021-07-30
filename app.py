@@ -204,12 +204,34 @@ def edit_category(category_id):
     category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
     return render_template("edit_category.html", category=category)
 
+
     # delete category
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash("Category is Successfully Deleted")
     return redirect(url_for("get_categories"))
+
+
+    # get cuisines from database
+@app.route("/get_cuisines")
+def get_cuisines():
+    cuisines = list(mongo.db.cuisine.find().sort("cuisine_name", 1))
+    return render_template("cuisines.html", cuisines=cuisines)
+
+
+    # adding cuisine
+@app.route("/add_cuisine", methods=["GET", "POST"])
+def add_cuisine():
+    if request.method == "POST":
+        cuisine = {
+            "cuisine_name": request.form.get("cuisine_name")
+        }
+        mongo.db.cuisine.insert_one(cuisine)
+        flash("New Cuisine is Added")
+        return redirect(url_for("get_cuisines"))
+
+    return render_template("add_cuisine.html")
 
 
     # runs application

@@ -6,28 +6,25 @@
             <div class="card">
                 <div class="card-image">
                     <img class="responsive-img" src="{{url_for('static', filename='images/project-3-img-014e.jpg')}}">
-                    <span class="card-title light-green-text text-darken-3 center-align">Edit Category</span>
+                    <span class="card-title light-green-text text-darken-3 center-align">Add new Cuisine</span>
                 </div>
                 <div class="card-content">
                     <div class="row">
-                        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_category', category_id=category._id) }}">
+                        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_cuisine') }}">
                             <div class="card-panel">
-                                <!-- Change Category name -->
+                                <!-- Cuisine name -->
                                 <div class="row">
                                     <div class="input-field col s12">
                                         <i class="fas fa-pencil-alt prefix light-green-text text-darken-3"></i>
-                                        <input id="category_name" name="category_name" type="text" value="{{ category.category_name }}" minlength="2"
+                                        <input id="cuisine_name" name="cuisine_name" type="text" minlength="2"
                                             maxlength="30" class="validate" required>
-                                        <label for="category_name">Edit Category Name</label>
+                                        <label for="cuisine_name">Add Cuisine Name</label>
                                     </div>
                                 </div>
-                                <!-- Update Category -->
+                                <!-- Add Cuisine -->
                                 <div class="row">
-                                    <a href="{{ url_for('get_categories') }}" class="col s6 btn-large red darken-1 text-shadow">
-                                        Cancel <i class="far fa-times-circle"></i>
-                                    </a>
-                                    <button type="submit" class="col s6 btn-large light-green darken-3 text-shadow">
-                                        Update Category <i class="fas fa-edit"></i>
+                                    <button type="submit" class="col s12 btn-large light-green darken-3 text-shadow">
+                                        Add Cuisine <i class="fas fa-plus-square"></i>
                                     </button>
                                 </div>
                             </div>
