@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div class="card">
+                <div class="card-image">
+                    <img class="responsive-img" src="{{url_for('static', filename='images/project-3-img-014e.jpg')}}">
+                    <span class="card-title light-green-text text-darken-3 center-align">Edit Cuisine</span>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_cuisine', cuisine_id=cuisine._id) }}">
+                            <div class="card-panel">
+                                <!-- Change Cuisine name -->
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="fas fa-pencil-alt prefix light-green-text text-darken-3"></i>
+                                        <input id="cuisine_name" name="cuisine_name" type="text" value="{{ cuisine.cuisine_name }}" minlength="2"
+                                            maxlength="30" class="validate" required>
+                                        <label for="cuisine_name">Edit Cuisine Name</label>
+                                    </div>
+                                </div>
+                                <!-- Update Cuisine -->
+                                <div class="row">
+                                    <a href="{{ url_for('get_cuisines') }}" class="col s6 btn-large red darken-1 text-shadow">
+                                        Cancel <i class="far fa-times-circle"></i>
+                                    </a>
+                                    <button type="submit" class="col s6 btn-large light-green darken-3 text-shadow">
+                                        Update Cuisine <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <p class="center-align">
+                You can
+                <a href="{{ url_for('logout') }}" class="link-text light-green-text text-darken-3">Log Out</a>
+            </p>
+        </div>
+    </div>
+
+{% endblock %}

@@ -234,6 +234,22 @@ def add_cuisine():
     return render_template("add_cuisine.html")
 
 
+
+    # edit cuisine
+@app.route("/edit_cuisine/<cuisine_id>", methods=["GET", "POST"])
+def edit_cuisine(cuisine_id):
+    if request.method == "POST":
+        submit = {
+            "cuisine_name": request.form.get("cuisine_name")
+        }
+        mongo.db.cuisine.update({"_id": ObjectId(cuisine_id)}, submit)
+        flash("Cuisine was Successfully Updated")
+        return redirect(url_for("get_cuisines"))
+
+    cuisine = mongo.db.cuisine.find_one({"_id": ObjectId(cuisine_id)})
+    return render_template("edit_cuisine.html", cuisine=cuisine)
+
+
     # runs application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
