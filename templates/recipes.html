@@ -11,8 +11,8 @@
         
         <div class="row image-text-row-recipes">
             {% for recipe in recipe %}
-            <div class="col s12 m12 l6">
-                <div class="col s12 m12 l6 image-area">
+            <div class="col s12 m12 l6 image-text-col-recipe">
+                <div class="col s12 m12 l6 image-area-recipes">
                     <!-- <p>{{ recipe.image_url }}</p> -->
                     <!-- <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-dish-002.jpg')}}" alt=""> -->
                     <img class="recipe-image responsive-img" src="{{ recipe.image_url }}" alt="{{ recipe.dish_name }}">
@@ -26,7 +26,7 @@
                     <p>{{ recipe.preparation_steps }}</p>
                     <p>{{ recipe.tools }}</p>
                     <p><strong>Author: </strong>{{ recipe.created_by }}</p> -->
-                    <a href="{{ url_for('get_recipe', recipe_id=recipe._id) }}" class="col s8 offset-m1 btn-large light-green darken-3 text-shadow">View Full Recipe</a>
+                    <a href="{{ url_for('get_recipe', recipe_id=recipe._id) }}" class="col s8 offset-m1 btn-large light-green darken-3 text-shadow button-recipes">View Full Recipe</a>
                     <!-- <div class="col s12">
                         {% if session.user|lower == recipe.created_by|lower %}
                         <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="col s5 offset-m1 btn-large red darken-1 text-shadow">Remove Recipe</a>
