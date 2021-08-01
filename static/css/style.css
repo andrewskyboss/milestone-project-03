@@ -115,6 +115,7 @@ img.header-logo-mobile {
     font-weight: 400;
     font-size: 40px;
     text-transform: capitalize;
+    z-index: 2;
 }
 
 .flash-messages h3 {
@@ -124,6 +125,19 @@ img.header-logo-mobile {
 .card .card-image {
     overflow: hidden;
     height: 30vh;
+}
+
+.card .card-image::before {
+    content: '';
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    border: 1px solid var(--color-white);
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
 }
 .card .card-image img {
     height: 100%;
@@ -166,6 +180,7 @@ div.image-text-col-recipe {
 }
 .col.image-area {
     height: 100%;
+    min-height: 300px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -173,6 +188,7 @@ div.image-text-col-recipe {
 }
 .col.image-area-recipes {
     height: auto;
+    min-height: 300px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -231,7 +247,7 @@ div.col.content-area::before {
     width: calc(100% - 40px);
     height: calc(100% - 40px);
 }
-
+div.card-content > div > div > a.button-user,
 div.col.content-area > a.button-recipes,
 div.col.content-area > a.button {
     border-radius: 0;
@@ -239,6 +255,7 @@ div.col.content-area > a.button {
     z-index: 2;
     transition: all 0.8s ease;
 }
+div.card-content > div > div > a.button-user:hover,
 div.col.content-area > a.button-recipes:hover,
 div.col.content-area > a.button:hover {
     background-color: var(--color-brand-3)!important;
@@ -299,6 +316,10 @@ footer > div > div.social-links-container {
     div.col.content-area {
         min-height: 350px;
         order: 2;
+    }
+
+    div.image-text-col-recipe {
+        flex-direction: column;
     }
 
 

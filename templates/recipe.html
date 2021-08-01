@@ -2,15 +2,17 @@
 {% block content %}
 
     <div class="row">
-        <div class="col s12 m8 offset-m2">
+        <div class="col s12 m8 offset-m2 ">
             <div class="card">
                 <div class="card-image">
                     <img class="responsive-img" src="{{ recipe.image_url }}" alt="{{ recipe.dish_name }}">
-                    <!-- <span class="card-title light-green-text text-darken-3 center-align">{{ recipe.dish_name }}</span> -->
+                    <span class="card-title red-text text-darken-1 center-align">{{ recipe.dish_name }}</span>
                 </div>
                 <div class="card-content">
                     <div class="row">
-                        <h3 class="subtitle  red-text text-darken-1 center-align">{{ recipe.dish_name }}</h3>
+                        <!-- <h3 class="subtitle  red-text text-darken-1 center-align">{{ recipe.dish_name }}</h3> -->
+                        <h4 class="subtitle light-green-text text-darken-3 center-align">Author</h4>
+                        <p>{{ recipe.created_by }}</p>
                         <p class="subtitle-text"><strong>Category: </strong> {{ recipe.category_name }}</p>
                         <p class="subtitle-text"><strong>Cousine: </strong> {{ recipe.cuisine_name }}</p>
                         <h4 class="subtitle light-green-text text-darken-3 center-align">Ingredients</h4>
@@ -19,7 +21,7 @@
                         <p>{{ recipe.preparation_steps }}</p>
                         <h4 class="subtitle light-green-text text-darken-3 center-align">Tools:</h4>
                         <p>{{ recipe.tools }}</p>
-                        <p><strong>Author: </strong>{{ recipe.created_by }}</p>
+                        
                         <div class="col s12">
                             {% if session.user|lower == recipe.created_by|lower %}
                             <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="col s5 offset-m1 btn-large red darken-1 text-shadow">Remove Recipe</a>
