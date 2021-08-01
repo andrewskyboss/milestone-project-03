@@ -55,7 +55,8 @@ nav ul a {
     background-color: transparent;
     transition: all 0.8s ease;
 }
-nav ul a.user-link {
+nav ul a.user-link,
+.sidenav li>a.user-link {
     background-color: var(--color-brand-3);
     color: var(--color-white);
 }
@@ -127,7 +128,7 @@ img.header-logo-mobile {
     height: 30vh;
 }
 
-.card .card-image::before {
+.card .card-image.add-background::before {
     content: '';
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.8);

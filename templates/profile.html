@@ -16,10 +16,10 @@
 
                         {% if session.user|lower == "admin"|lower %}
                             <div class="col s12 center-align">
-                                <a href="{{ url_for('get_categories') }}" class="col s4 offset-m1 btn-large light-green darken-3 text-shadow button-user">
+                                <a href="{{ url_for('get_categories') }}" class="col s12 m4 l4 offset-m1 offset-l1 btn-large light-green darken-3 text-shadow button-user">
                                     Manage Categories <i class="far fa-folder-open right"></i>
                                 </a>
-                                <a href="{{ url_for('get_cuisines') }}" class="col s4 offset-m1 btn-large light-green darken-3 text-shadow button-user">
+                                <a href="{{ url_for('get_cuisines') }}" class="col s12 m4 l4 offset-m1 offset-l1 btn-large light-green darken-3 text-shadow button-user">
                                     Manage Cuisines <i class="far fa-folder-open right"></i>
                                 </a>
                             </div>
