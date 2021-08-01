@@ -8,24 +8,25 @@
                     <img class="responsive-img" src="{{ recipe.image_url }}" alt="{{ recipe.dish_name }}">
                     <span class="card-title red-text text-darken-1 center-align">{{ recipe.dish_name }}</span>
                 </div>
-                <div class="card-content">
-                    <div class="row">
+                <div class="card-content single-recipe">
+                    <div class="row single-recipe-box">
                         <!-- <h3 class="subtitle  red-text text-darken-1 center-align">{{ recipe.dish_name }}</h3> -->
                         <h4 class="subtitle light-green-text text-darken-3 center-align">Author</h4>
-                        <p>{{ recipe.created_by }}</p>
-                        <p class="subtitle-text"><strong>Category: </strong> {{ recipe.category_name }}</p>
-                        <p class="subtitle-text"><strong>Cousine: </strong> {{ recipe.cuisine_name }}</p>
+                        <p class="subtitle-text">{{ recipe.created_by }}</p>
+                        <h4 class="subtitle light-green-text text-darken-3 center-align">Category</h4>
+                        <p class="subtitle-text"> {{ recipe.category_name }}</p>
+                        <h4 class="subtitle light-green-text text-darken-3 center-align">Cousine</h4>
+                        <p class="subtitle-text"> {{ recipe.cuisine_name }}</p>
                         <h4 class="subtitle light-green-text text-darken-3 center-align">Ingredients</h4>
-                        <p>{{ recipe.ingredients }}</p>
+                        <p class="subtitle-text">{{ recipe.ingredients }}</p>
                         <h4 class="subtitle light-green-text text-darken-3 center-align">Preparation Steps</h4>
-                        <p>{{ recipe.preparation_steps }}</p>
+                        <p class="subtitle-text">{{ recipe.preparation_steps }}</p>
                         <h4 class="subtitle light-green-text text-darken-3 center-align">Tools:</h4>
-                        <p>{{ recipe.tools }}</p>
-                        
-                        <div class="col s12">
+                        <p class="subtitle-text">{{ recipe.tools }}</p><br>
+                        <div class="col s12 single-recipe-button-box">
                             {% if session.user|lower == recipe.created_by|lower %}
-                            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="col s5 offset-m1 btn-large red darken-1 text-shadow">Remove Recipe</a>
-                            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="col s5 offset-m1 btn-large light-green darken-3 text-shadow">Edit</a>
+                            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="col s12 m12 l4 xl4 offset-l1 offset-xl1 btn-large red darken-1 text-shadow button-recipe">Remove Recipe</a>
+                            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="col s12 m12 l4 xl4 offset-l2 offset-xl2 btn-large light-green darken-3 text-shadow button-recipe">Edit</a>
                             {% endif %}
                         </div>
                     </div>
