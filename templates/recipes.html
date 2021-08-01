@@ -3,16 +3,16 @@
     <h3 class="title red-text text-darken-1 center-align">Recipes</h3>
 
     <div class="row card-panel grey lighten-5">
-        <form action="{{ url_for('search') }}" method="post" class="col s10">
+        <form action="{{ url_for('search') }}" method="post" class="col s10 offset-s1">
             <div class="row valign-wrapper center-align">
                 <div class="input-field col s12 m8">
-                    <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-search prefix light-green-text text-darken-3"></i>
                     <input type="text" name="query" id="query" minlength="3" class="validate" required>
                     <label for="query">Search for Recipe</label>
                 </div>
                 <div class="col s12 m4">
-                    <a href="{{ url_for('get_recipes') }}" class="red btn text-shadow">Reset</a>
-                    <button type="submit" class="light-blue darken-1 btn text-shadow">
+                    <a href="{{ url_for('get_recipes') }}" class="col s12 m4 l4 xl4 offset-m1 offset-l1 offset-xl1 btn-large red darken-1 text-shadow">Reset</a>
+                    <button type="submit" class="col s12 m4 l4 xl4 offset-m1 offset-l1 offset-xl1 btn-large light-green darken-3 text-shadow button-recipes">
                         <i class="fas fa-search left"></i> Search
                     </button>
                 </div>
@@ -20,13 +20,9 @@
         </form>
     </div>
 
-    <!-- {% for recipe in recipe %}
-        {{ recipe.dish_name }}<br>
-        {{ recipe.category_name }}<br>
-    {% endfor %} -->
 
     <div class="container-fluid">
-        
+        {% if recipe|length > 0 %}
         <div class="row image-text-row-recipes">
             {% for recipe in recipe %}
             <div class="col s12 m12 l6 image-text-col-recipe">
@@ -56,7 +52,9 @@
             </div>
             {% endfor %}
         </div>
-       
+        {% else %}
+            <h3 class="red-text text-darken-1 center-align">Unfortunately no Results Found</h3>
+        {% endif %}
     </div>
 
 {% endblock %}
