@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+        <div class="card">
+                <div class="card-image">
+                    <img class="responsive-img" src="{{url_for('static', filename='images/project-3-img-014g.jpg')}}">
+                    <span class="card-title red-text text-darken-1 center-align">Contact Us</span>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+
+                        <h3 class="subtitle light-green-text text-darken-3 center-align">Fill out the form below, please. </h3>
+                        <form class="col s12 m8 offset-m2" id="contact-form" method="POST">
+                            <div class="card-panel">
+                                <!-- name -->
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="far fa-user prefix red-text text-darken-1"></i>
+                                        <input id="name" name="name" type="text" minlength="5"
+                                            maxlength="50" pattern="^[a-zA-Z0-9]{5,50}$" class="validate" required>
+                                        <label for="name">Full Name</label>
+                                    </div>
+                                </div>
+                                <!-- email -->
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="fas fa-at prefix red-text text-darken-1"></i>
+                                        <input id="email" name="email" type="email" minlength="5"
+                                            maxlength="100" class="validate" required>
+                                        <label for="email">Email Address</label>
+                                    </div>
+                                </div>
+                                <!-- phone -->
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="fas fa-phone-alt prefix red-text text-darken-1"></i>
+                                        <input id="phone" name="phone" type="text" minlength="5"
+                                            maxlength="50" pattern="^[0-9]{5,50}$" class="validate" required>
+                                        <label for="phone">Phone Number</label>
+                                    </div>
+                                </div>
+                                <!-- message -->
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="fas fa-pencil-alt prefix red-text text-darken-1"></i>
+                                        <textarea id="textarea1" name="textarea1" type="text" minlength="5"
+                                            maxlength="350" pattern="^[a-zA-Z0-9]{5,350}$" class="materialize-textarea" required></textarea>
+                                        <label for="textarea1">Message</label>
+                                    </div>
+                                </div>
+                                <!-- Contact us -->
+                                <div class="row">
+                                    <div class="col s12 center-align">
+                                        <button type="reset" class="col s4 offset-s1 btn-large red darken-1 text-shadow">
+                                            Clear <i class="far fa-times-circle"></i>
+                                        </button>
+                                        <button type="submit" class="col s4 offset-s2 btn-large light-green darken-3 text-shadow">
+                                            Send Message <i class="fas fa-sign-in-alt"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <p class="center-align">
+                For Existing Users
+                <a href="{{ url_for('login') }}" class="link-text red-text text-darken-1">Log In Here</a>
+            </p>
+        </div>
+    </div>
+
+{% endblock %}

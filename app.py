@@ -271,6 +271,15 @@ def delete_cuisine(cuisine_id):
     return redirect(url_for("get_cuisines"))
 
 
+    # calls contact us page
+@app.route("/contact_us", methods=["GET", "POST"])
+def contact_us():
+    if request.method == "POST":
+        flash("Thanks {}, we have received your message!".format(
+            request.form.get("name")))
+    return render_template("contact_us.html")
+
+
     # runs application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
