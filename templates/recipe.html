@@ -37,10 +37,17 @@
 
     <div class="row">
         <div class="col s12 m8 offset-m2">
-            <p class="center-align">
-                You can
-                <a href="{{ url_for('logout') }}" class="link-text light-green-text text-darken-3">Log Out</a>
-            </p>
+            {% if session.user %}
+                <p class="center-align">
+                    You can
+                    <a href="{{ url_for('logout') }}" class="link-text light-green-text text-darken-3">Log Out</a>
+                </p>
+            {% else %}
+                <p class="center-align">
+                    For Existing Users
+                    <a href="{{ url_for('login') }}" class="link-text red-text text-darken-1">Log In Here</a>
+                </p>
+            {% endif %}
         </div>
     </div>
 

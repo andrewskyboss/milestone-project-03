@@ -275,12 +275,12 @@ div.col.content-area::before {
     height: calc(100% - 40px);
 }
 div.row.card-panel.search-box-container > form > div > div > a.button-recipes,
-div.card-content.single-recipe > div > div > a.button-recipe,
+/* div.card-content.single-recipe > div > div > a.button-recipe, */
 div.card-content > div > div > a.button-user,
 div.col.content-area > a.button-recipes,
 div.col.content-area > a.button {
     border-radius: 0;
-    /* margin-left: unset; */
+    margin-left: 0;
     z-index: 2;
     transition: all 0.8s ease;
 }
@@ -292,6 +292,27 @@ div.col.content-area > a.button:hover {
     background-color: var(--color-brand-3)!important;
     color: var(--color-white);
 }
+
+
+div.card-content > div > div > a.button-user{
+    border-radius: 0;
+    margin-left: unset;
+    z-index: 2;
+    transition: all 0.8s ease;
+}
+
+div.categories-module .row .category-box .card-action a.button-category {
+    width: 45%;
+    border-radius: 0;
+    margin-left: unset;
+    z-index: 2;
+    transition: all 0.8s ease;
+}
+div.categories-module .row .category-box .card-action a.button-category:hover {
+    background-color: var(--color-brand-3)!important;
+    color: var(--color-white);
+}
+
 
 /* footer */
 
