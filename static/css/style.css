@@ -48,6 +48,11 @@ main {
 nav.nav-extended .nav-wrapper {
     min-height: 90px;
     background-color: var(--color-white);
+    /* display: inline-flex; */
+}
+.search-box-container {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 nav ul a {
     color: var(--color-brand-5);
@@ -109,6 +114,7 @@ img.header-logo-mobile {
 /* content styling */
 .card .card-image .card-title {
     font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 1px var(--color-black);
     left: 50%;
     top: 50%;
     bottom: unset;

@@ -32,6 +32,28 @@
             <div class="nav-wrapper">
                 <a href="{{ url_for('get_homepage') }}" class="brand-logo"><img class="header-logo" src="{{url_for('static', filename='images/creative-cooking-logo.svg')}}" alt="logo"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+
+                <!-- <div class="row search-box-container">
+                    <div class="col s12 m6">
+                        <div class="card white">
+                            <form action="{{ url_for('search') }}" method="post" class="col s8 offset-s1 search-box">
+                                <div class="row valign-wrapper center-align">
+                                    <div class="input-field col s12 m12 l8 xl8">
+                                        <i class="fas fa-search prefix light-green-text text-darken-3"></i>
+                                        <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                                        <label for="query">Search for Recipe</label>
+                                    </div>
+                                    <div class="col s12 m12 l4 xl4">
+                                        <a href="{{ url_for('get_recipes') }}" class="col s12 m4 l4 xl4 offset-m1 offset-l1 offset-xl1 btn-large red darken-1 text-shadow button-recipes">Reset</a>
+                                        <button type="submit" class="col s12 m4 l4 xl4 offset-m2 offset-l1 offset-xl1 btn-large light-green darken-3 text-shadow button-recipes">
+                                            <i class="fas fa-search left"></i> Search
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_homepage') }}">Home</a></li>
                     <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
@@ -123,7 +145,12 @@
 							<span class="sr-only">Twitter</span>
 						</a>
                     </li>
-
+                    <li class="list-inline-item">
+                        <a class="inline-item"  href="{{ url_for('contact_us') }}">
+							<i class="far fa-envelope" aria-hidden="true" title="Contact Us"></i>
+							<span class="sr-only">Contact Us</span>
+						</a>
+                    </li>
                 </ul>
             </div>
         </div>
