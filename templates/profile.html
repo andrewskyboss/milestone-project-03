@@ -10,9 +10,9 @@
                 </div>
                 <div class="card-content">
                     <div class="row">
-                        <h3 class="center-align light-blue-text text-darken-4">
+                        <!-- <h3 class="center-align light-blue-text text-darken-4">
                             {{ username }}'s Profile
-                        </h3>
+                        </h3> -->
 
                         {% if session.user|lower == "admin"|lower %}
                             <div class="col s12 center-align">
@@ -26,9 +26,11 @@
                         {% endif %}
 
                         {% if session.user %}
-                            <h3 class="center-align light-blue-text text-darken-4">
-                                {{ username }}'s Recipes:
-                            </h3>
+                            <div class="col s12 profile-user-title">
+                                <h3 class="light-green-text text-darken-3 center-align">
+                                    {{ username }}'s Recipes:
+                                </h3>
+                            </div>
                             <div class="row image-text-row-recipes">
                                 {% for recipe in recipe %}
                                 <div class="col s12 m12 l6 image-text-col-recipe">

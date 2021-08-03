@@ -156,6 +156,10 @@ img.header-logo-mobile {
     position: relative;
 }
 
+.card .card-content h3.profile-user-title {
+    margin-top: 50px;
+}
+
 .card-content.single-recipe .single-recipe-box {
     padding: 30px;
 }
