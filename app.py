@@ -286,15 +286,15 @@ def contact_us():
 @app.route("/")
 @app.route("/get_stats")
 def get_stats():
-
+    num =0
     categories = list(mongo.db.categories.find().sort("category_name", 1))
-    {% for category in categories %}
+    for category in categories:
         recipes = list(mongo.db.recipes.find({"category_name": category}))
-        {% for recipe in recipes %}
+        for recipe in recipes:
+            if recipe:
+                num +=1
 
-        {% endfor %}
-    {% endfor %}
-    return render_template("stats.html", recipe=recipes)
+    return render_template("stats.html")
 
 
     # runs application
