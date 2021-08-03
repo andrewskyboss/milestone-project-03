@@ -26,13 +26,6 @@ def get_homepage():
 
 
 @app.route("/")
-@app.route("/get_stats")
-def get_stats():
-    return render_template("stats.html")
-
-
-
-@app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
     recipes = list(mongo.db.recipes.find())
@@ -287,6 +280,21 @@ def contact_us():
         flash("Thanks {}, we have received your message!".format(
             request.form.get("name")))
     return render_template("contact_us.html")
+
+
+    # get stats page
+@app.route("/")
+@app.route("/get_stats")
+def get_stats():
+
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    {% for category in categories %}
+        recipes = list(mongo.db.recipes.find({"category_name": category}))
+        {% for recipe in recipes %}
+
+        {% endfor %}
+    {% endfor %}
+    return render_template("stats.html", recipe=recipes)
 
 
     # runs application
