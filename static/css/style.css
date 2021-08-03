@@ -64,6 +64,7 @@ nav ul a.user-link,
 .sidenav li>a.user-link {
     background-color: var(--color-brand-3);
     color: var(--color-white);
+    border-left: 1px solid var(--color-white);
 }
 
 nav > div > ul > li > a:hover {

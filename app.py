@@ -24,6 +24,14 @@ def get_homepage():
     return render_template("index.html")
 
 
+
+@app.route("/")
+@app.route("/get_stats")
+def get_stats():
+    return render_template("stats.html")
+
+
+
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
