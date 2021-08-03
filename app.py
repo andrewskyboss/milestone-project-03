@@ -286,13 +286,24 @@ def contact_us():
 @app.route("/")
 @app.route("/get_stats")
 def get_stats():
-    num =0
+    stats_dict = {}
     categories = list(mongo.db.categories.find().sort("category_name", 1))
+    print("Categories test print:")
+    print(categories)
     for category in categories:
-        recipes = list(mongo.db.recipes.find({"category_name": category}))
+        recipes = list(mongo.db.recipes.find({"category_name": category["category_name"]}))
+        print("Recipes test print:")
+        print(recipes)
+        num = 0
+    
         for recipe in recipes:
-            if recipe:
+            if recipe["category_name"]:
                 num +=1
+                print("Number test print: " + recipe["category_name"])
+                print(num)
+            # stats_dict.update(recipe["category_name"]: num)
+    print("Dictionary test print:")
+    print(stats_dict)
 
     return render_template("stats.html")
 
