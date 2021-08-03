@@ -24,6 +24,28 @@
                                 </a>
                             </div>
                         {% endif %}
+
+                        {% if session.user %}
+                            <h3 class="center-align light-blue-text text-darken-4">
+                                {{ username }}'s Recipes:
+                            </h3>
+                            <div class="row image-text-row-recipes">
+                                {% for recipe in recipe %}
+                                <div class="col s12 m12 l6 image-text-col-recipe">
+                                    <div class="col s12 m12 l6 image-area-recipes">
+                                        <img class="recipe-image responsive-img" src="{{ recipe.image_url }}" alt="{{ recipe.dish_name }}">
+                                    </div>
+                                    <div class="col s12 m12 l6 content-area"> 
+                                        <h3 class="subtitle light-green-text text-darken-3 center-align">{{ recipe.dish_name }}</h3>
+                                        <p class="subtitle-category"><strong>Category: </strong> {{ recipe.category_name }}</p>
+                                        <p class="subtitle-cuisine"><strong>Cousine: </strong> {{ recipe.cuisine_name }}</p>
+                                        <a href="{{ url_for('get_recipe', recipe_id=recipe._id) }}" class="col s8 offset-m1 btn-large light-green darken-3 text-shadow button-recipes">View Full Recipe</a>
+                                    </div>
+                    
+                                </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>

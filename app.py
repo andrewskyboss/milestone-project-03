@@ -99,11 +99,13 @@ def login():
     # loads users profile function
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-    # grab the session user's username from db
+    # takes the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
+    recipes = list(mongo.db.recipes.find({'created_by': ['username']}))
     if session["user"]:
-        return render_template("profile.html", username=username)
+        return render_template("profile.html", username=username, 
+        recipe=recipes)
 
     return redirect(url_for("login"))
 
@@ -128,7 +130,6 @@ def add_recipe():
             "ingredients": request.form.get("ingredients"),
             "preparation_steps": request.form.get("preparation_steps"),
             "image_url": request.form.get("image_url"),
-            # "img_description": request.form.get("img_description"),
             "tools": request.form.get("tools"),
             "created_by": session["user"]
         }
