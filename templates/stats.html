@@ -6,21 +6,15 @@
 
     <div class="container">
         <div class="row">
-            <div class="progress">
-                <div class="determinate" style="width: 70%"></div>
-            </div>
-            <div class="progress">
-                <div class="determinate" style="width: 70%"></div>
-            </div>
-            <div class="progress">
-                <div class="determinate" style="width: 70%"></div>
-            </div>
-
+            {% for key, stats in stats_dict.items() %}
+                <h4 class="light-green-text text-darken-3">{{ key }} dishes: </h4>
+                <p>they are {{ stats }} % of our recipes</p>
+                <div class="progress grey lighten-1">
+                    <div class="determinate red darken-1" style="width: {{ stats }}%"></div>
+                </div>
+            {% endfor %}
         </div>
-        <div class="progress">
-            <div class="determinate" style="width: 70%"></div>
-        </div>
-
+        <h3 class="subtitle red-text text-darken-1 center-align">Check our recipes below:</h3>
         <div class="row image-text-row">
             <div class="col s12 m5 l7 image-area">
                 <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-014b.jpg')}}" alt="">
