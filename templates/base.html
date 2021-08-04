@@ -58,7 +58,7 @@
                     <li><a href="{{ url_for('get_homepage') }}">Home</a></li>
                     <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
                     <li><a href="{{ url_for('get_stats') }}">Stats</a></li>
-                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="{{ url_for('get_recipes') }}">Partners</a></li>
                 {% if session.user %}
                     <li><a class="user-link" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                     <li><a class="user-link" href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
@@ -80,7 +80,7 @@
             <li class="mobile-menu-first-element"><a href="{{ url_for('get_recipes') }}">Home</a></li>
                 <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
                 <li><a href="{{ url_for('get_stats') }}">Stats</a></li>
-                <li><a href="partners.html">Partners</a></li>
+                <li><a href="{{ url_for('get_recipes') }}">Partners</a></li>
             {% if session.user %}
                 <li><a class="user-link" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a class="user-link" href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
