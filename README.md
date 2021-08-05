@@ -4,49 +4,11 @@
 # Backend Development / Creative Cooking
 
 ![logo](assets/images/creative-cooking-logo.png)
-[Live site on Github Pages](https://andrewskyboss.github.io/milestone-project-02)
+[Live site on Heroku Pages](http://milestone-project-03-ac.herokuapp.com/get_homepage)
 
 # Author
 Andrej Cybovskij
 
-- [milestone-project-03](#milestone-project-03)
-- [Interactive Front-End Development / Hey Travel](#interactive-front-end-development---hey-travel)
-- [Author](#author)
-  * [Project Overview](#project-overview)
-  * [UX](#ux)
-    + [Project Goals](#project-goals)
-      - [The goals of this project are:](#the-goals-of-this-project-are-)
-      - [User Goals](#user-goals)
-      - [Developer Goals](#developer-goals)
-      - [Website Owner Goals](#website-owner-goals)
-    + [User Stories](#user-stories)
-    + [Design Choices](#design-choices)
-      - [Colors](#colors)
-      - [Typography](#typography)
-      - [Images](#images)
-      - [Design Elements](#design-elements)
-      - [Animations and Transitions](#animations-and-transitions)
-    + [Wireframes](#wireframes)
-    + [Features](#features)
-      - [Implemented Features](#implemented-features)
-      - [Future Features](#future-features)
-  * [Technologies Used](#technologies-used)
-    + [Frameworks and Extensions](#frameworks-and-extensions)
-    + [Fonts](#fonts)
-    + [Programing Languages](#programing-languages)
-  * [Tools and Resources](#tools-and-resources)
-  * [[Testing](assets/documents/Testing.md)](#-testing--assets-documents-testingmd-)
-    + [Lighthouse performance](#lighthouse-performance)
-  * [Code validity](#code-validity)
-  * [Version Control](#version-control)
-  * [Deployment](#deployment)
-  * [Credits](#credits)
-    + [Content](#content)
-    + [Media](#media)
-    + [Code Snippets and Tutorials](#code-snippets-and-tutorials)
-    + [Acknowledgments](#acknowledgments)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/' target="_blank">Table of contents generated with markdown-toc</a></i></small>
 
 
 ## Project Overview
