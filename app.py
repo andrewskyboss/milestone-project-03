@@ -315,7 +315,7 @@ def get_stats():
     # print("Lenght of recipes list is :")
     # print(length_list)
 
-    return render_template("stats.html", stats_dict=stats_dict)
+    return render_template("stats.html", stats_dict=stats_dict, length_list=length_list)
 
 
     # runs application
