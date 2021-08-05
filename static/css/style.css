@@ -183,6 +183,10 @@ img.header-logo-mobile {
     margin-top: 20px;
 }
 
+.progress {
+    height: 15px;
+}
+
 /* buttons */
 
 button.btn,

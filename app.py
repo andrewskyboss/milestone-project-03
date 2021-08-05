@@ -288,34 +288,23 @@ def contact_us():
 def get_stats():
     stats_dict = {}
     categories = list(mongo.db.categories.find().sort("category_name", 1))
-    print("Categories test print:")
-    print(categories)
     all_recipes = list(mongo.db.recipes.find())
     length_list = len(all_recipes)
-    print("Lenght of recipes list is :")
-    print(length_list)
     
     for category in categories:
-        recipes = list(mongo.db.recipes.find({"category_name": category["category_name"]}))
-        print("Recipes test print:")
-        print(recipes)
+        recipes = list(mongo.db.recipes.find({"category_name": 
+            category["category_name"]}))
         num = 0
     
         for recipe in recipes:
             if recipe["category_name"]:
                 num +=1
-                print("Number test print: " + recipe["category_name"])
-                print(num)
             temp_name = recipe["category_name"]
             temp_num = num * 100 / length_list
             stats_dict[temp_name] = temp_num
-        # length_list += num
-    print("Dictionary test print:")
-    print(stats_dict)
-    # print("Lenght of recipes list is :")
-    # print(length_list)
 
-    return render_template("stats.html", stats_dict=stats_dict, length_list=length_list)
+    return render_template("stats.html", stats_dict=stats_dict,
+        length_list=length_list)
 
 
     # runs application
