@@ -41,6 +41,10 @@ h1, h2, h3 {
     font-family: 'Dancing Script', cursive;
     text-transform: capitalize;
 }
+h1 {font-size: 50px;}
+h2 { font-size: 40px;}
+h3 { font-size: 30px; }
+h4 {font-size: 26px;}
 main {
     padding-top: 100px;
     min-height: calc(100vh - 160px);
@@ -355,6 +359,16 @@ footer > div > div.social-links-container {
 
 /* break points */
 
+@media only screen and (max-width: 1199px) {
+    h1 {font-size: 40px;}
+    h2 { font-size: 30px;}
+    h3 { font-size: 25px; }
+    h4 {font-size: 22px;}
+
+    .btn-large { font-size: 12px; }
+
+}
+
 @media only screen and (min-width: 991px) {
 
     nav .brand-logo {
@@ -364,6 +378,8 @@ footer > div > div.social-links-container {
 }
 
 @media only screen and (max-width: 993px) {
+
+
     div.image-text-row {
         height: auto;
         overflow: auto;
@@ -372,6 +388,10 @@ footer > div > div.social-links-container {
 
     .search-box-container  form.search-box .valign-wrapper {
         flex-direction: column;
+    }
+    .card-panel > form > div > div > .button-recipes,
+    div.card-content > div > div > a.button-user {
+        margin-top: 10px;
     }
 
 }
@@ -391,6 +411,14 @@ footer > div > div.social-links-container {
 
     div.image-text-col-recipe {
         flex-direction: column;
+    }
+
+    footer > div > div > ul > li > a.inline-item {
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    .btn-large {
+        font-size: 12px;
     }
 
 

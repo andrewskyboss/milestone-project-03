@@ -5,14 +5,14 @@
     <div class="row card-panel grey lighten-5 search-box-container">
         <form action="{{ url_for('search') }}" method="post" class="col s10 offset-s1 search-box">
             <div class="row valign-wrapper center-align">
-                <div class="input-field col s12 m12 l8 xl8">
+                <div class="input-field col s12 m12 l7 xl7">
                     <i class="fas fa-search prefix light-green-text text-darken-3"></i>
                     <input type="text" name="query" id="query" minlength="3" class="validate" required>
                     <label for="query">Search for Recipe</label>
                 </div>
-                <div class="col s12 m12 l4 xl4">
-                    <a href="{{ url_for('get_recipes') }}" class="col s12 m4 l4 xl4 offset-m1 offset-l1 offset-xl1 btn-large red darken-1 text-shadow button-recipes">Reset</a>
-                    <button type="submit" class="col s12 m4 l4 xl4 offset-m2 offset-l1 offset-xl1 btn-large light-green darken-3 text-shadow button-recipes">
+                <div class="col s12 m12 l5 xl5">
+                    <a href="{{ url_for('get_recipes') }}" class="col s12 m12 l5 xl5 offset-l0 offset-xl0 btn-large red darken-1 text-shadow button-recipes">Reset</a>
+                    <button type="submit" class="col s12 m12 l6 xl6 offset-l1 offset-xl1 btn-large light-green darken-3 text-shadow button-recipes">
                         <i class="fas fa-search left"></i> Search
                     </button>
                 </div>
@@ -27,26 +27,14 @@
             {% for recipe in recipe %}
             <div class="col s12 m12 l6 image-text-col-recipe">
                 <div class="col s12 m12 l6 image-area-recipes">
-                    <!-- <p>{{ recipe.image_url }}</p> -->
-                    <!-- <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-dish-002.jpg')}}" alt=""> -->
                     <img class="recipe-image responsive-img" src="{{ recipe.image_url }}" alt="{{ recipe.dish_name }}">
                 </div>
                 <div class="col s12 m12 l6 content-area"> 
                     <h3 class="subtitle light-green-text text-darken-3 center-align">{{ recipe.dish_name }}</h3>
                     <p class="subtitle-category"><strong>Category: </strong> {{ recipe.category_name }}</p>
                     <p class="subtitle-cuisine"><strong>Cousine: </strong> {{ recipe.cuisine_name }}</p>
-                    <!-- <h4 class="subtitle light-green-text text-darken-3 center-align">Ingredients</h4>
-                    <p>{{ recipe.ingredients }}</p>
-                    <p>{{ recipe.preparation_steps }}</p>
-                    <p>{{ recipe.tools }}</p>
-                    <p><strong>Author: </strong>{{ recipe.created_by }}</p> -->
-                    <a href="{{ url_for('get_recipe', recipe_id=recipe._id) }}" class="col s8 offset-m1 btn-large light-green darken-3 text-shadow button-recipes">View Full Recipe</a>
-                    <!-- <div class="col s12">
-                        {% if session.user|lower == recipe.created_by|lower %}
-                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="col s5 offset-m1 btn-large red darken-1 text-shadow">Remove Recipe</a>
-                        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="col s5 offset-m1 btn-large light-green darken-3 text-shadow">Edit</a>
-                        {% endif %}
-                    </div> -->
+                    <a href="{{ url_for('get_recipe', recipe_id=recipe._id) }}" class="col s8 offset-m1 btn-large light-green darken-3 text-shadow button-recipes">Full Recipe:</a>
+
                 </div>
 
             </div>
