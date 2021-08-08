@@ -15,7 +15,7 @@
                                 <!-- Recipe Name -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-pencil-alt prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-pencil-alt prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <input id="dish_name" name="dish_name" type="text" minlength="5"
                                             maxlength="60" class="validate" required>
                                         <label for="dish_name">New Recipe Name</label>
@@ -24,7 +24,7 @@
                                 <!-- Category name -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-list prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-list prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <select id="category_name" name="category_name" class="validate" required>
                                             <option value="" disabled selected>Choose Category</option>
                                             {% for category in categories %}
@@ -37,7 +37,7 @@
                                 <!-- Cuisine name -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-list prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-list prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <select id="cuisine_name" name="cuisine_name" class="validate" required>
                                             <option value="" disabled selected>Choose Cuisine</option>
                                             {% for cuisine in cuisine %}
@@ -50,9 +50,7 @@
                                 <!-- Ingredients -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-hamburger prefix light-green-text text-darken-3"></i>
-                                        <!-- <input id="ingredients" name="ingredients" type="text" class="validate" required>
-                                        <label for="ingredients">Add Ingredients</label> -->
+                                        <i class="fas fa-hamburger prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <textarea id="ingredients" name="ingredients" type="text" minlength="5"
                                             maxlength="1000" class="materialize-textarea" required></textarea>
                                         <label for="ingredients">Add Ingredients</label>
@@ -61,7 +59,7 @@
                                 <!-- Preparation Steps -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-balance-scale-right prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-balance-scale-right prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <input id="preparation_steps" name="preparation_steps" type="text" class="validate" required>
                                         <label for="preparation_steps">Add Preparation Steps</label>
                                     </div>
@@ -70,11 +68,11 @@
                                 <!-- image -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-exclamation prefix red-text text-darken-1"></i>
+                                        <i class="fas fa-exclamation prefix red-text text-darken-1 hide-on-small-only"></i>
                                         <label for="image_url" class="red-text text-darken-1">You can use <a href="https://imgbb.com" target="_blank">free imgbb service</a> to get image url </label><br>
                                     </div>
                                     <div class="input-field col s12">
-                                        <i class="far fa-image prefix light-green-text text-darken-3"></i>
+                                        <i class="far fa-image prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <input id="image_url" name="image_url" type="text" class="validate" pattern="https?:\/\/.+(jpg|jpeg|gif|bmp|png|tiff)" title="Must contain url link with image" required>
                                         <label for="image_url">Add Image URL address</label>
                                     </div>
@@ -83,7 +81,7 @@
                                 <!-- Tools -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-utensils prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-utensils prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <input id="tools" name="tools" type="text" class="validate" required>
                                         <label for="tools">Add necessary tools</label>
                                     </div>
@@ -92,10 +90,10 @@
                                 <!-- Add recipe -->
                                 <div class="row">
                                     <button type="reset" class="col s12 m12 l4 offset-l1 btn-large red darken-1 text-shadow">
-                                        Clear <i class="far fa-times-circle"></i>
+                                        Clear <i class="far fa-times-circle hide-on-small-only"></i>
                                     </button>
                                     <button type="submit" class="col s12 m12 l4 offset-l2 btn-large light-green darken-3 text-shadow button-recipes">
-                                        Add recipe <i class="fas fa-sign-in-alt"></i>
+                                        Add recipe <i class="fas fa-sign-in-alt hide-on-small-only"></i>
                                     </button>
                                 </div>
                             </div>

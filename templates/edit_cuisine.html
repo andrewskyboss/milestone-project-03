@@ -15,7 +15,7 @@
                                 <!-- Change Cuisine name -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-pencil-alt prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-pencil-alt prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <input id="cuisine_name" name="cuisine_name" type="text" value="{{ cuisine.cuisine_name }}" minlength="2"
                                             maxlength="30" class="validate" required>
                                         <label for="cuisine_name">Edit Cuisine Name</label>
@@ -24,10 +24,10 @@
                                 <!-- Update Cuisine -->
                                 <div class="row">
                                     <a href="{{ url_for('get_cuisines') }}" class="col s4 offset-s1 btn-large red darken-1 text-shadow">
-                                        Cancel <i class="far fa-times-circle"></i>
+                                        Cancel <i class="far fa-times-circle hide-on-small-only"></i>
                                     </a>
                                     <button type="submit" class="col s4 offset-s2 btn-large light-green darken-3 text-shadow">
-                                        Update Cuisine <i class="fas fa-edit"></i>
+                                        Update Cuisine <i class="fas fa-edit hide-on-small-only"></i>
                                     </button>
                                 </div>
                             </div>

@@ -15,7 +15,7 @@
                                 <!-- Recipe Name -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-pencil-alt prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-pencil-alt prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <input id="dish_name" name="dish_name" type="text" value="{{ recipe.dish_name }}" minlength="5"
                                             maxlength="60" class="validate" required>
                                         <label for="dish_name">Recipe Name</label>
@@ -24,7 +24,7 @@
                                 <!-- Category name -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-list prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-list prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <select id="category_name" name="category_name" class="validate" required>
                                             <option value="" disabled selected>Choose Category</option>
                                             {% for category in categories %}
@@ -41,7 +41,7 @@
                                 <!-- Cuisine name -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-list prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-list prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <select id="cuisine_name" name="cuisine_name" class="validate" required>
                                             <option value="" disabled selected>Choose Cuisine</option>
                                             {% for cuisine in cuisine %}
@@ -58,7 +58,7 @@
                                 <!-- Ingredients -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-hamburger prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-hamburger prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <input id="ingredients" name="ingredients" type="text" value="{{ recipe.ingredients }}" class="validate" required>
                                         <label for="ingredients">Add Ingredients</label>
                                     </div>
@@ -66,43 +66,23 @@
                                 <!-- Preparation Steps -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-balance-scale-right prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-balance-scale-right prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <input id="preparation_steps" name="preparation_steps" type="text" value="{{ recipe.preparation_steps }}" class="validate" required>
                                         <label for="preparation_steps">Add Preparation Steps</label>
                                     </div>
                                 </div>
-                                <!-- add image -->
-                                <!-- <div class="file-field input-field">
-                                    <div class="btn btn-large light-green darken-3 text-shadow">
-                                        <span>Add Image</span>
-                                        <input type="file">
-                                    </div>
-                                    <div class="file-path-wrapper">
-                                        <input class="file-path validate" type="text">
-                                    </div>
-                                </div> -->
-
                                 <!-- temp image -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="far fa-image prefix light-green-text text-darken-3"></i>
+                                        <i class="far fa-image prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <input id="image_url" name="image_url" type="text" value="{{ recipe.image_url }}" class="validate" required>
                                         <label for="image_url">Add Image URL address</label>
                                     </div>
                                 </div>
-                                <!-- image description -->
-                                <!-- <div class="row">
-                                    <div class="input-field col s12">
-                                        <i class="far fa-image prefix light-green-text text-darken-3"></i>
-                                        <input id="img_description" name="img_description" type="text" value="{{ recipe.img_description }}" class="validate" required>
-                                        <label for="img_description">Add Image description</label>
-                                    </div>
-                                </div> -->
-
                                 <!-- Tools -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <i class="fas fa-utensils prefix light-green-text text-darken-3"></i>
+                                        <i class="fas fa-utensils prefix light-green-text text-darken-3 hide-on-small-only"></i>
                                         <input id="tools" name="tools" type="text" value="{{ recipe.tools }}" class="validate" required>
                                         <label for="tools">Add necessary tools</label>
                                     </div>
@@ -112,10 +92,10 @@
                                 <div class="row">
                                     <div class="col s12 center-align">
                                         <a href="{{ url_for('get_recipes') }}" class="col s4 offset-s1 btn-large red darken-1 text-shadow">
-                                            Cancel <i class="far fa-times-circle"></i>
+                                            Cancel <i class="far fa-times-circle hide-on-small-only"></i>
                                         </a>
                                         <button type="submit" class="col s4 offset-s2 btn-large light-green darken-3 text-shadow">
-                                            Edit recipe <i class="fas fa-edit"></i>
+                                            Edit recipe <i class="fas fa-edit hide-on-small-only"></i>
                                         </button>
                                     </div>
                                 </div>
