@@ -312,7 +312,7 @@ def get_stats():
                 num +=1
             temp_name = recipe["category_name"]
             temp_num = num * 100 / length_list
-            stats_dict[temp_name] = temp_num
+            stats_dict[temp_name] = round(temp_num, 2)
 
     return render_template("stats.html", stats_dict=stats_dict,
         length_list=length_list)
