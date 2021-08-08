@@ -27,9 +27,13 @@
 
                         {% if session.user %}
                             <div class="col s12 profile-user-title">
-                                <h3 class="light-green-text text-darken-3 center-align">
-                                    {{ username }}'s Recipes:
-                                </h3>
+                                {% if recipe|length > 0 %}
+                                    <h3 class="light-green-text text-darken-3 center-align">
+                                        {{ username }}'s Recipes:
+                                    </h3>
+                                {% else %}
+                                    <h3 class="red-text text-darken-1 center-align">{{ username }} You can add recipes and preview them here </h3>
+                                {% endif %}
                             </div>
                             <div class="row image-text-row-recipes">
                                 {% for recipe in recipe %}

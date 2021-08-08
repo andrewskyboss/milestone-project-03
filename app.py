@@ -123,6 +123,10 @@ def logout():
     # add new recipe to database
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
+    if 'user' not in session:
+        flash('You need to log in to add a recipe.')
+        return redirect(url_for('login'))
+
     if request.method == "POST":
         recipe = {
             "dish_name": request.form.get("dish_name"),
@@ -147,6 +151,7 @@ def add_recipe():
     # edit recipe function
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+
     if request.method == "POST":
         submit = {
             "dish_name": request.form.get("dish_name"),
