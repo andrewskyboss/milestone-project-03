@@ -59,7 +59,13 @@ Main goals of website owner are:
 
 
 #### Colors
+The color palette were created according to people association with the food and professional information from the [Jenn David Design](https://jenndavid.com/colors-that-influence-food-sales-infographic/), food packaging Design Company that has over 20 years of successful experience partnering with specialty food brands.
 
+- The color brand one is Red color (CG Red). It is using for many titles and buttons to attract attention. According to Jenn David Design: Red and yellow are the chief food colors, evoking the taste buds and stimulating the appetite. Both red and yellow are also effective at grabbing attention.
+- The color brand two is Green color (Maximum Green). It is used for titles, subtitles, and buttons. According to Jenn David Design: Green color is connotes with eco-friendliness, healthy (think veggies).
+- The color brand three is Orange color. It is used for hover statements and for user navigation links, to attract attention. According to Jenn David Design: Orange color is a blend of red and yellow, naturally lends itself to food as another appetizing color.
+- The color brand four is Spanish Grey color. It is used as neutral base color and some lines color.
+- The color brand five is a Jet Grey color. It is dark color and used for main content font and all dark design elements to make them visible to user.
 
 - Color palete was created using [Coolors resources](https://coolors.co)
 - ![color scheme](assets/images/colors-new.png)
