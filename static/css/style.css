@@ -225,6 +225,10 @@ div.image-text-col-recipe {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+div.image-text-col-recipe:last-child {
+    justify-content: center;
+    margin-left: 25%!important;
+}
 .col.image-area {
     height: 100%;
     min-height: 300px;
@@ -295,7 +299,6 @@ div.col.content-area::before {
     height: calc(100% - 40px);
 }
 div.row.card-panel.search-box-container > form > div > div > a.button-recipes,
-/* div.card-content.single-recipe > div > div > a.button-recipe, */
 div.card-content > div > div > a.button-user,
 div.col.content-area > a.button-recipes,
 div.col.content-area > a.button {
@@ -395,6 +398,11 @@ footer > div > div.social-links-container {
         margin-top: 10px;
     }
 
+    .card .card-image .card-title {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
 }
 
 @media only screen and (max-width: 601px) {
@@ -420,6 +428,19 @@ footer > div > div.social-links-container {
     }
     .btn-large {
         font-size: 12px;
+    }
+    .fa,
+    .fab,
+    .far,
+    .fas {
+        display: none;
+    }
+    label,
+    input,
+    textarea,
+    .prefix ~ .select-wrapper {
+        width: 100%!important;
+        margin-left: 0!important;
     }
 
 
