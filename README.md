@@ -9,16 +9,16 @@
 # Author
 Andrej Cybovskij
 
-[Jenn David Design](https://jenndavid.com/colors-that-influence-food-sales-infographic/)
-
 ## Project Overview
 
 - Below is a picture of site that shows it in responsive states. 
 [link to check a website to be responsive](http://ami.responsivedesign.is)
 ![picture of site](assets/images/responsive.png)
-- Hey Travel is a website, where user can find a holiday destination for their needs. For their convenience, there are Map with proposed destinations markers. As well, user can choose a travel package from this website. To get inspiration about destinations, there are lot of visual materials placed in different manner, such as Hero sliders, Grid images and Gallery. As well, user has form to contact website owner to get all necessary information.
-
-- Despite to the existing travel situation, people still wants to travel. They are looking for new destinations and possibilities to go out from home. That is mean that any Travel and destinations websites, this version as well, has very high commercial feature. It has modern design and lot of visual component. Design was build using last UI/UX technologies.
+- Creative Cooking is an online cookbook website. 
+- The main idea of this website is to allow users to find and share different kind of recipes. Everybody have possibility to search and use recipes from this website. To share their own recipes, every potential user needs to create personal account and add recipes for sharing. As well, registered users could manage their recipes from their personal profile. That includes updates and delete recipes. 
+- Website recipes have a categories and cuisines options to choose. The website admin only has access to manage categories and cuisines groups. He can add, update or delete them. 
+- The website has a dashboard with some stats information about recipes placed in the website.
+- As well, website has a page with links to promote partners websites.
 
 - [Link to a deployed website](https://milestone-project-03-ac.herokuapp.com/get_homepage)
 
