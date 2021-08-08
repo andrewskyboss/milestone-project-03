@@ -65,21 +65,23 @@ Main goals of website owner are:
 - ![color scheme](assets/images/colors-new.png)
 
 #### Typography
-- Elegant Quicksand sans-serif typeface family font, were using in this project for the body text. Body font size is 16px. This body font is easy to read and good for design.
-- All titles are in Abril Fatface font’s family.
-- According to Google Font, Abril Fatface is a contemporary revamp of classic font, inspired by the heavy titling fonts used in advertising posters in 19th century Britain and France. It has both neutrality and strong presence on the page to attract reader attention with measured tension by its curves, good color and high contrast. 
--  H1 as main title is in size of 50px. It is quite big size, but looks very stylish and attract attention. H2 title is in size of 40px. H3 titles are in size of 30px.
+- Raleway sans-serif typeface family font, were using in this project for the body text. Body font size is 16px. This body font is easy to read and good for design. It is very universal and has very wide range of font weights.
+- All titles H1, H2 and H3 are in Dancing Scrip cursive font’s family.
+- All H4 titles are in Raleway sans-serif typeface font’s family.
+- According to Google Font, Dancing Script is a lively casual script where the letters bounce and change size slightly. Caps are big, and goes below the baseline. This font is associated with handwriting and is a good choice for recipe book titles. It is similar in style to everybody own hand written recipe book.
+-  H1 as main title is in size of 52px. It is quite big size, but looks very stylish and attract attention. H2 title is in size of 42px. H3 titles are in size of 32px. H4 titles are in size of 26px.
 - All fonts are reduced in size for mobile devices to fit into the small screen of devices:
-- H1 = 40px, H2 = 35px, H3 = 27px.
+- H1 = 40px, H2 = 30px, H3 = 25px, H4 = 22px.
 - body font is in same size for mobile devices.
 
 - Font examples are presented below:
-- H1 Abril Fatface 50px ![H1 Title Abril Fatface 50px](assets/images/h1.PNG)
-- H2 Abril Fatface 40px ![H2 Title Abril Fatface 40px](assets/images/h2.PNG)
-- H3 Abril Fatface 30px ![H3 Title Abril Fatface 30px](assets/images/h3.PNG)
-- Paragraph (body) Quicksand 16px ![p Paragraph Quicksand 16px](assets/images/p.PNG)
-- [Abril Fatface font can be found here](https://fonts.google.com/specimen/Abril+Fatface)
-- [Quicksand  font can be found here](https://fonts.google.com/specimen/Quicksand)
+- H1 Dancing Scrip 50px ![H1 Title Abril Fatface 50px](assets/images/h1.png)
+- H2 Dancing Scrip 40px ![H2 Title Abril Fatface 40px](assets/images/h2.png)
+- H3 Dancing Scrip 30px ![H3 Title Abril Fatface 30px](assets/images/h3.png)
+- H4 Dancing Scrip 26px ![H4 Title Abril Fatface 26px](assets/images/h4.png)
+- Paragraph (body) Raleway 16px ![p Paragraph Raleway 16px](assets/images/p.png)
+- [Dancing Scrip font can be found here](https://fonts.google.com/specimen/Dancing+Script)
+- [Raleway  font can be found here](https://fonts.google.com/specimen/Raleway)
  
 
 #### Images
