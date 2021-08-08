@@ -134,11 +134,6 @@ Following features will be used in this project:
   - Contact form with CTA, to be in touch with website's owner.
   - Social media icons are at the bottom of every page.
 
-### Database Planning
-
-The database "Creative Cooking" will contain 4 collections: Users, Recipes, Cuisine and Categories:
-- [Link to a database schema](DATABASE.md)
-
 
 #### Implemented Features
 
@@ -193,13 +188,13 @@ Features to be implemented in the future:
 - [Heroku cloud Platform](https://www.heroku.com/home)
 - [ImgBB -free image hosting and sharing service](https://imgbb.com/)
 
-## Testing
-Details of testing can be found in a separate document
-- [Link to a testing document](TESTING.md)
+## [Testing](assets/documents/Testing.md)
+
+
 
 
 ### Lighthouse performance
-![Lighthouse Performance](assets/images/lighthouse.png)
+![Lighthouse Performance](assets/images/lighthouse1.PNG)
 
 
 ## Code validity
