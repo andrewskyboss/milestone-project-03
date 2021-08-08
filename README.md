@@ -78,7 +78,7 @@ Main goals of website owner are:
 - H1 Dancing Scrip 50px ![H1 Title Abril Fatface 50px](assets/images/h1.png)
 - H2 Dancing Scrip 40px ![H2 Title Abril Fatface 40px](assets/images/h2.png)
 - H3 Dancing Scrip 30px ![H3 Title Abril Fatface 30px](assets/images/h3.png)
-- H4 Dancing Scrip 26px ![H4 Title Abril Fatface 26px](assets/images/h4.png)
+- H4 Raleway 26px ![H4 Title Raleway 26px](assets/images/h4.png)
 - Paragraph (body) Raleway 16px ![p Paragraph Raleway 16px](assets/images/p.png)
 - [Dancing Scrip font can be found here](https://fonts.google.com/specimen/Dancing+Script)
 - [Raleway  font can be found here](https://fonts.google.com/specimen/Raleway)
