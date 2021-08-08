@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 class="title red-text text-darken-1 center-align">Apologies - Page Not Found</h1>
+    <h2 class="title light-green-text text-darken-3 center-align">However, You can check our recipes below:</h2>
+
+    <div class="container">
+        <div class="row image-text-row">
+            <div class="col s12 m5 l7 image-area">
+                <img class="recipe-image responsive-img" src="{{url_for('static', filename='images/project-3-img-014b.jpg')}}" alt="">
+            </div>
+      
+            <div class="col s12 m7 l5 content-area">
+                <h3 class="subtitle light-green-text text-darken-3 center-align">Recipes</h3>
+                <p>Get more infrotmation about food preparation</p>
+                <a href="{{ url_for('get_recipes') }}" class="button col s10 m12 l10 xl8 offset-m0 offset-l0 offset-xl0 btn-large red darken-1 text-shadow">Read More  &nbsp;&nbsp; <i class="far fa-list-alt"></i></a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
