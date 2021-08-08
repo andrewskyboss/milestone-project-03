@@ -9,7 +9,7 @@
 # Author
 Andrej Cybovskij
 
-[Jenn David Design](<a href="https://jenndavid.com/colors-that-influence-food-sales-infographic/" target="_blank"></a>)
+[Jenn David Design](https://jenndavid.com/colors-that-influence-food-sales-infographic/){:target="_blank"}
 
 ## Project Overview
 
