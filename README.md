@@ -131,7 +131,8 @@ List of all elements used on website:
 - top menu (desktop navigation)
 - sidebar menu (mobile navigation)
 - footer
-- containers/section
+- containers/cards
+- progress bar
 - buttons
 - text input
 - textarea inputs
