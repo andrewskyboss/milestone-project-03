@@ -145,7 +145,7 @@ img.header-logo-mobile {
     height: 30vh;
 }
 
-.card .card-image.add-background::before {
+/* .card .card-image.add-background::before {
     content: '';
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.8);
@@ -157,7 +157,7 @@ img.header-logo-mobile {
     border: 1px solid var(--color-white);
     width: calc(100% - 40px);
     height: calc(100% - 40px);
-}
+} */
 
 .card .card-image img {
     height: 100%;
@@ -403,8 +403,23 @@ footer > div > div.social-links-container {
     nav .brand-logo {
         left: 20px;
     }
+
     .sidenav {
         display: none;
+    }
+
+    .card .card-image.add-background::before {
+        content: '';
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        z-index: 1;
+        border: 1px solid var(--color-white);
+        width: calc(100% - 80px);
+        height: calc(100% - 80px);
     }
 }
 
@@ -434,7 +449,7 @@ footer > div > div.social-links-container {
     .search-box-container  form.search-box .valign-wrapper {
         flex-direction: column;
     }
-
+    .card-content.single-recipe > div > div > a.button-recipe,
     .card .card-content form  button.button-recipes,
     .card-panel > form > div > div > .button-recipes,
     div.card-content > div > div > a.button-user {
@@ -445,8 +460,18 @@ footer > div > div.social-links-container {
         width: 100%;
         background-color: rgba(255, 255, 255, 0.8);
     }
+
     .card .card-image .card-title.color-change-mobile {
         color: var(--color-brand-1)!important;
+    }
+
+    .card-content.single-recipe .single-recipe-box .subtitle {
+        padding-left: 0%;
+    }
+    
+    .card-content.single-recipe .single-recipe-box .subtitle-text {
+        margin-left: 0%;
+        width: 100%;
     }
 
 }
