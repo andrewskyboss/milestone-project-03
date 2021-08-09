@@ -103,6 +103,15 @@ This project was created based on the target audience needs and requirements. Th
       - Contact form.
       - Social media icons.
 
+- **Structure plane** - Information in this project is structured and logically placed into main parts. All parts placed to the navigation. Exception is for Packages. They are not in the navigation and can be accessed through the destinations page. As well, main navigation elements are placed on the homepage into grid system and complimented by the images.
+
+- **Skeleton plane** - part for mock-ups:
+  - Wireframes links are presented below:
+    - [Link to a Wireframes for a Desctop view](assets/documents/project-3-desctop-wireframes.pdf)
+    - [Link to a Wireframes for Tablet view ](assets/documents/project-3-tablet-wireframes.pdf)
+    - [Link to a Wireframes for Mobile view ](assets/documents/project-3-mobile-wireframes.pdf)
+
+- **Surface plane** - it is a final part of design procedure. The project is built in Classical design style with infusions of modern elements. Abril Fatface font gives additional modern design inclusions. This font curves are not traditional for Travel websites design. It looks more from fashion magazine designs and brings more stylish look. Pale Shades of Blue, Red and green are very pleasant. Colors are associated with water, sun and summer grass. Images are very colourful and attract attention. Website gives a holydays feeling. Same as semi-transparent and grey backgrounds, sliding and fade in animation gives lightweight and elegance.
 
 #### Colors
 The color palette were created according to people association with the food and professional information from the [Jenn David Design](https://jenndavid.com/colors-that-influence-food-sales-infographic/), food packaging Design Company that has over 20 years of successful experience partnering with specialty food brands.
