@@ -393,6 +393,7 @@ footer > div > div.social-links-container {
     .search-box-container  form.search-box .valign-wrapper {
         flex-direction: column;
     }
+    .card .card-content form  button.button-recipes,
     .card-panel > form > div > div > .button-recipes,
     div.card-content > div > div > a.button-user {
         margin-top: 10px;
