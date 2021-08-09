@@ -55,10 +55,10 @@ nav.nav-extended .nav-wrapper {
     background-color: var(--color-white);
     /* display: inline-flex; */
 }
-.search-box-container {
+/* .search-box-container {
     margin-left: 50px;
     margin-right: 50px;
-}
+} */
 nav ul a {
     color: var(--color-brand-5);
     padding: 13px 15px;
@@ -372,6 +372,25 @@ footer > div > div.social-links-container {
 
 }
 
+@media only screen and (min-width: 993px) {
+    div.image-text-col-recipe.recipes:last-child {
+        justify-content: center;
+        margin-left: 25%!important;
+    }
+    .search-box-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+
+    nav .brand-logo {
+        left: 20px;
+    }
+}
+
+/* max width */
 @media only screen and (max-width: 1199px) {
     h1 {font-size: 40px;}
     h2 { font-size: 30px;}
@@ -382,21 +401,7 @@ footer > div > div.social-links-container {
 
 }
 
-@media only screen and (min-width: 991px) {
-
-    nav .brand-logo {
-        left: 20px;
-    }
-}
-@media only screen and (min-width: 993px) {
-    div.image-text-col-recipe.recipes:last-child {
-        justify-content: center;
-        margin-left: 25%!important;
-    }
-}
-
 @media only screen and (max-width: 993px) {
-
 
     div.image-text-row {
         height: auto;
@@ -452,7 +457,5 @@ footer > div > div.social-links-container {
         width: 100%!important;
         margin-left: 0!important;
     }
-
-
 
 }
