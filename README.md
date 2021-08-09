@@ -60,7 +60,13 @@ Common types of users are:
 
 #### Website Owner Goals
 Main goals of website owner are:
-- To sell more travel packages.
+- To represent website in a pleasant manner.
+- Showcase existing recipes.
+- To have properly working login system for user.
+- To make information more structural.
+- To attract users by presenting some stats information.
+- To propose users some partners links.
+- To represent contact information.
 
 
 ### User Stories
