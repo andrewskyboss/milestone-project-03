@@ -87,6 +87,22 @@ Main goals of website owner are:
 ### Design Choices
 This project was created based on the target audience needs and requirements. The target audience is a quite wide range of people who likes to cook. Based on the website theme, were chosen Red, orange and green colors as a main brand colors. They are associated with food and takes attention to themselves. The food theme involves visual attraction to the user that mean website should contain a lot of food imaginary but not overload attention. However existing trends like to use clean and simple design. As a small piece of attraction, website’s buttons contains corresponding icons. According to user requirements, website should stay useful, usable and valuable for everybody. To achieve value from design were used user experience five planes:
 
+- **Strategy Plane**  – aiming to achieve in the first place and for whom. The users of this website are people who likes to cook and share their ideas. The website should be quite simple and universal for everybody. Navigation is used quite standard and known by every online users. Traditional rule is no more than 3 clicks to search or get other information.
+
+- **Scope plane** - represents features we want to include into design. 
+  - This project includes following features: 
+      - Header navigation.
+      - Mobile navigation.
+      - Registration system.
+      - Login functionality.
+      - Create, Read, Update and Delete functionality.
+      - Intuitive design.
+      - SVG logo on top of the page.
+      - Grid/Card images as a visual representatives.
+      - Search functionality.
+      - Contact form.
+      - Social media icons.
+
 
 #### Colors
 The color palette were created according to people association with the food and professional information from the [Jenn David Design](https://jenndavid.com/colors-that-influence-food-sales-infographic/), food packaging Design Company that has over 20 years of successful experience partnering with specialty food brands.
