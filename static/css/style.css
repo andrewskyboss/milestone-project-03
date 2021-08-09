@@ -23,6 +23,7 @@ a {
     color: inherit;
     transition: color 0.8s ease;
 }
+
 .container {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -38,10 +39,12 @@ header {
     width: 100%;
     z-index: 1500;
 }
+
 h1, h2, h3 {
     font-family: 'Dancing Script', cursive;
     text-transform: capitalize;
 }
+
 h1 {font-size: 52px;}
 h2 { font-size: 42px;}
 h3 { font-size: 32px; }
@@ -50,21 +53,19 @@ main {
     padding-top: 100px;
     min-height: calc(100vh - 160px);
 }
+
 nav.nav-extended .nav-wrapper {
     min-height: 90px;
     background-color: var(--color-white);
-    /* display: inline-flex; */
 }
-/* .search-box-container {
-    margin-left: 50px;
-    margin-right: 50px;
-} */
+
 nav ul a {
     color: var(--color-brand-5);
     padding: 13px 15px;
     background-color: transparent;
     transition: all 0.8s ease;
 }
+
 nav ul a.user-link,
 .sidenav li>a.user-link {
     background-color: var(--color-brand-3);
@@ -76,10 +77,12 @@ nav > div > ul > li > a:hover {
     background-color: var(--color-brand-3);
     color: var(--color-white);
 }
+
 nav > div > ul > li > a.user-link:hover {
     background-color: var(--color-brand-1);
     color: var(--color-white);
 }
+
 nav .brand-logo {
     height: 100%;
     width: 90px;
@@ -108,11 +111,13 @@ img.header-logo {
     height: auto;
     padding: 20px;
 }
+
 img.header-logo-mobile {
     position: relative;
     width: 100%;
     height: 80px;
 }
+
 #mobile-demo  li.mobile-menu-first-element {
     margin-top: 100px;
 }
@@ -153,11 +158,13 @@ img.header-logo-mobile {
     width: calc(100% - 40px);
     height: calc(100% - 40px);
 }
+
 .card .card-image img {
     height: 100%;
     object-fit: cover;
     object-position: center center;
 }
+
 .card .single-recipe {
     position: relative;
 }
@@ -169,6 +176,7 @@ img.header-logo-mobile {
 .card-content.single-recipe .single-recipe-box {
     padding: 30px;
 }
+
 .card-content.single-recipe .single-recipe-box .subtitle {
     text-align: left;
     padding-left: 10%;
@@ -176,6 +184,7 @@ img.header-logo-mobile {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
 .card-content.single-recipe .single-recipe-box .subtitle-text {
     text-align: left;
     margin-left: 20%;
@@ -184,6 +193,7 @@ img.header-logo-mobile {
     font-weight: 400;
     border-bottom: 1px solid var(--color-brand-4);
 }
+
 .card-content.single-recipe .single-recipe-box .single-recipe-button-box {
     margin-top: 20px;
 }
@@ -207,6 +217,7 @@ button.btn-large:hover,
 button.btn-small:hover {
     background-color: var(--color-brand-3)!important;
 }
+
 .link-text.light-green-text.text-darken-3:hover,
 .link-text.red-text.text-darken-1:hover {
     color: var(--color-brand-3)!important;
@@ -220,15 +231,13 @@ div.image-text-row {
     overflow: auto;
     margin-bottom: 40px;
 }
+
 div.image-text-col-recipe {
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/* div.image-text-col-recipe:last-child {
-    justify-content: center;
-    margin-left: 25%!important;
-} */
+
 .col.image-area {
     height: 100%;
     min-height: 300px;
@@ -237,6 +246,7 @@ div.image-text-col-recipe {
     position: relative;
     padding: 0;
 }
+
 .col.image-area-recipes {
     height: auto;
     min-height: 300px;
@@ -245,6 +255,7 @@ div.image-text-col-recipe {
     position: relative;
     padding: 0;
 }
+
 .col.image-area-recipes::before,
 .col.image-area::before {
     content: '';
@@ -257,6 +268,7 @@ div.image-text-col-recipe {
     width: calc(100% - 40px);
     height: calc(100% - 40px);
 }
+
 div.col.image-area-recipes > img.recipe-image,
 div.col.image-area > img.recipe-image {
     position: absolute;
@@ -265,6 +277,7 @@ div.col.image-area > img.recipe-image {
     object-fit: cover;
     object-position: center center;
 }
+
 div.col.content-area {
     height: 100%;
     min-height: 300px;
@@ -281,6 +294,7 @@ div.col.content-area .subtitle {
     margin-top: 0;
     margin-bottom: 5px;
 }
+
 div.col.content-area .subtitle-category,
 div.col.content-area .subtitle-cuisine {
     margin-top: 0;
@@ -298,6 +312,7 @@ div.col.content-area::before {
     width: calc(100% - 40px);
     height: calc(100% - 40px);
 }
+
 div.row.card-panel.search-box-container > form > div > div > a.button-recipes,
 div.card-content > div > div > a.button-user,
 div.col.content-area > a.button-recipes,
@@ -307,6 +322,7 @@ div.col.content-area > a.button {
     z-index: 2;
     transition: all 0.8s ease;
 }
+
 div.row.card-panel.search-box-container > form > div > div > a.button-recipes:hover,
 div.card-content.single-recipe > div > div > a.button-recipe:hover,
 div.card-content > div > div > a.button-user:hover,
@@ -315,7 +331,6 @@ div.col.content-area > a.button:hover {
     background-color: var(--color-brand-3)!important;
     color: var(--color-white);
 }
-
 
 div.card-content > div > div > a.button-user{
     border-radius: 0;
@@ -331,17 +346,18 @@ div.categories-module .row .category-box .card-action a.button-category {
     z-index: 2;
     transition: all 0.8s ease;
 }
+
 div.categories-module .row .category-box .card-action a.button-category:hover {
     background-color: var(--color-brand-3)!important;
     color: var(--color-white);
 }
-
 
 /* footer */
 
 footer > div > div > ul.list-inline.social-links {
     display: inline-flex;
 }
+
 footer {
     display: grid;
 }
@@ -373,10 +389,12 @@ footer > div > div.social-links-container {
 }
 
 @media only screen and (min-width: 993px) {
+
     div.image-text-col-recipe.recipes:last-child {
         justify-content: center;
         margin-left: 25%!important;
     }
+
     .search-box-container {
         margin-left: 50px;
         margin-right: 50px;
@@ -392,6 +410,7 @@ footer > div > div.social-links-container {
 
 /* max width */
 @media only screen and (max-width: 1199px) {
+
     h1 {font-size: 40px;}
     h2 { font-size: 30px;}
     h3 { font-size: 25px; }
@@ -412,6 +431,7 @@ footer > div > div.social-links-container {
     .search-box-container  form.search-box .valign-wrapper {
         flex-direction: column;
     }
+
     .card .card-content form  button.button-recipes,
     .card-panel > form > div > div > .button-recipes,
     div.card-content > div > div > a.button-user {
@@ -446,6 +466,16 @@ footer > div > div.social-links-container {
         font-size: 20px;
         padding: 10px 10px;
     }
+
+    footer > div > div > ul > li > a.inline-item.css-verification {
+        font-size: 20px;
+        padding: 0px 5px;
+    }
+
+    footer > div > div > ul > li > a.inline-item.css-verification img {
+        width: 60px!important;
+    }
+
     .btn-large {
         font-size: 12px;
     }
