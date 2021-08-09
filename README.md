@@ -37,12 +37,13 @@ Andrej Cybovskij
 
 #### User Goals
 
-- The target audience of this website is very wide. They are different age and status, families or single people.
+- The target audience of this website is quite wide. They are different age, status, families or single people.
 
 Common types of users are:
-- New customers.
-- Existing customers.
-- Admin. He’s goal is to get access to the back end information to manage it.
+- New customers. The users’ main goal is to get a necessary recipe. They are ready to search and discover new recipes. As well, they could wonder how to share their recipes on this website. They need to get login information and discover user’s dashboard functionality, how to add their recipes to the system
+- Existing customers. They knows website structure and knows how to login, search, add, update and delete recipes.
+- Admin. He’s goal is to get access to the back end information to manage it. He needs to manage categories and cuisines such as create, edit update or delete them
+- This website is proposing login system for users to create, update and delete user’s recipes.
 
 #### Developer Goals
 - Design and implement a front-end web application based on the best principles of user experience design, accessibility and responsivity.
