@@ -145,20 +145,6 @@ img.header-logo-mobile {
     height: 30vh;
 }
 
-/* .card .card-image.add-background::before {
-    content: '';
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 1;
-    border: 1px solid var(--color-white);
-    width: calc(100% - 40px);
-    height: calc(100% - 40px);
-} */
-
 .card .card-image img {
     height: 100%;
     object-fit: cover;
@@ -212,10 +198,12 @@ button.btn-small {
     transition: all 0.8s ease;
 }
 
+.card-content form  a.button-category:hover,
 button.btn:hover,
 button.btn-large:hover,
 button.btn-small:hover {
     background-color: var(--color-brand-3)!important;
+    color: var(--color-white);
 }
 
 .link-text.light-green-text.text-darken-3:hover,
