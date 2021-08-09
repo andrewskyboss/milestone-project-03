@@ -199,7 +199,7 @@ Details of testing can be found in a separate document
 
 
 ### Lighthouse performance
-![Lighthouse Performance](assets/images/lighthouse.png)
+![Lighthouse Performance](assets/images/lighthouse2.png)
 
 
 ## Code validity
