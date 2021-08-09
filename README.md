@@ -103,7 +103,7 @@ This project was created based on the target audience needs and requirements. Th
       - Contact form.
       - Social media icons.
 
-- **Structure plane** - Information in this project is structured and logically placed into main parts. All parts placed to the navigation. Exception is for Packages. They are not in the navigation and can be accessed through the destinations page. As well, main navigation elements are placed on the homepage into grid system and complimented by the images.
+- **Structure plane** - this project’s information is structured and logically placed into the main navigation. As well, this project’s content is taken from the MongoDB database. The structure of Database tables are presented in this [link to a database schema](DATABASE.md).
 
 - **Skeleton plane** - part for mock-ups:
   - Wireframes links are presented below:
