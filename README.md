@@ -166,8 +166,11 @@ List of all elements used on website:
 - contact form
 
 
-#### Animations and Transitions
-
+#### Animations
+Project has a limited range of animations. It draws attention to the element.
+- Animation is added to the following elements:
+  - **Hover** state is used for all icons and buttons. On hover, they are changing background and text colors. Hover effect is added to top navigation elements too.
+  - **Sliding from/to the left** animation is added to the mobile navigation.
 
 
 ### Wireframes
