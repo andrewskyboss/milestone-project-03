@@ -85,7 +85,7 @@ Main goals of website owner are:
 
 
 ### Design Choices
-
+This project was created based on the target audience needs and requirements. The target audience is a quite wide range of people who likes to cook. Based on the website theme, were chosen Red, orange and green colors as a main brand colors. They are associated with food and takes attention to themselves. The food theme involves visual attraction to the user that mean website should contain a lot of food imaginary but not overload attention. However existing trends like to use clean and simple design. As a small piece of attraction, website’s buttons contains corresponding icons. According to user requirements, website should stay useful, usable and valuable for everybody. To achieve value from design were used user experience five planes:
 
 
 #### Colors
