@@ -399,12 +399,12 @@ footer > div > div.social-links-container {
         margin-left: 50px;
         margin-right: 50px;
     }
-}
-
-@media only screen and (min-width: 991px) {
 
     nav .brand-logo {
         left: 20px;
+    }
+    .sidenav {
+        display: none;
     }
 }
 
@@ -426,6 +426,9 @@ footer > div > div.social-links-container {
         height: auto;
         overflow: auto;
         margin-bottom: 40px;
+    }
+    .sidenav li>a.user-link {
+        border-bottom: 1px solid var(--color-white);
     }
 
     .search-box-container  form.search-box .valign-wrapper {
