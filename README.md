@@ -46,7 +46,16 @@ Common types of users are:
 - This website is proposing login system for users to create, update and delete user’s recipes.
 
 #### Developer Goals
-- Design and implement a front-end web application based on the best principles of user experience design, accessibility and responsivity.
+- Design, develop and implement a full-stack a MongoDB-backed Flask project for a web application that allows users to store and manipulate data records.
+- Design and implement web application based on the best principles of user experience design, accessibility and responsivity.
+- Design, develop and implement a web application using HTML, CSS, JavaScript, Python-Flask and MongoDB technologies.
+- Designing a database structure well suited for the project.
+- Create functionality for users to create, locate, display, edit and delete records (CRUD functionality).
+- Clearly document process for the future usage and information.
+- Use version control software (Git & GitHub) to maintain and share code with other developers.
+- Test and deploy web application to a Cloud platform. (Heroku)
+- Demonstrate abilities and knowledge gained during the course.
+- Get experience in a project development.
 
 
 #### Website Owner Goals
