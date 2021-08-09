@@ -27,8 +27,13 @@ Andrej Cybovskij
 ### Project Goals
 
 #### The goals of this project are:
-- Design, develop and implement a dynamic front-end web application using HTML, CSS and JavaScript
+- Design, develop and implement a full-stack site that allows users to manage a common dataset about a particular domain.
+- Design, develop and implement a web application using HTML, CSS, JavaScript, Python-Flask and MongoDB technologies
 - Meet the target audience users’ needs using UI/UX design principles
+- Test a full-stack front-end web application through the development, implementation and deployment stages
+- Deploy a front-end web application to a Cloud platform (Heroku)
+- Demonstrate and document the development process through a version control system
+- Learn Python+Flask theory and practically implement all gained knowledge
 
 #### User Goals
 
