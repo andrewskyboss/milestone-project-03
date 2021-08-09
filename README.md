@@ -189,7 +189,12 @@ Following features will be used in this project:
   - Designed with HTML5, CSS, JavaScript and Materialize.
   - Fixed Header navigation. Simple and easy to navigate.
   - Mobile navigation (sliding from the left).
-  - Clickable Header logo. 
+  - Clickable Header logo.  
+  - Search functionality.
+  - Registration functionality.
+  - Login functionality.
+  - Create,read, update and delete functionality for the user.
+  - Database connection and data handling.
   - Contact form with CTA, to be in touch with website's owner.
   - Social media icons are at the bottom of every page.
 
