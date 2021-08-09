@@ -71,8 +71,17 @@ Main goals of website owner are:
 
 ### User Stories
 
-- Aa a , I want to have:
-  1.
+- As a user, I want to have:
+  1. Ability to easily find out what or who the site is for.
+  2. Ability to easily navigate the website.
+  3. Ability to find recipes.
+  4. Ability to get recipe's full details.
+  5. Ability to create account.
+  6. Ability to update account.
+  7. Ability to login into account.
+  8. Ability to add new recipe.
+  9. Ability to edit my recipe.
+  10. Ability to get in touch with website admin or owner.
 
 
 ### Design Choices
