@@ -445,6 +445,9 @@ footer > div > div.social-links-container {
         width: 100%;
         background-color: rgba(255, 255, 255, 0.8);
     }
+    .card .card-image .card-title.color-change-mobile {
+        color: var(--color-brand-1)!important;
+    }
 
 }
 

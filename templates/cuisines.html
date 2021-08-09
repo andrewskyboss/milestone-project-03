@@ -2,7 +2,7 @@
 {% block content %}
 
     <div class="row">
-        <div class="col s12 m8 l10 offset-m2 offset-l1 categories-module">
+        <div class="col s12 m10 l10 offset-m1 offset-l1 categories-module">
         <div class="card">
                 <div class="card-image">
                     <img class="responsive-img" src="{{url_for('static', filename='images/project-3-img-014d.jpg')}}">
@@ -21,7 +21,7 @@
 
             <div class="row">
                 {% for cuisine in cuisines %}
-                    <div class="col s12 m3 category-box">
+                    <div class="col s12 m12 l6 xl3 category-box">
                         <div class="card white text-shadow center-align">
                             <div class="card-content grey-text text-darken-4">
                                 <span class="card-title">{{ cuisine.cuisine_name }}</span>
