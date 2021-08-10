@@ -246,18 +246,15 @@ The following languages, frameworks, libraries, and other tools were used to con
   - [Raleway  font can be found here](https://fonts.google.com/specimen/Raleway)
 
 
-## Tools and Resources
-- [Wirefames by Balsamiq](https://balsamiq.com/wireframes/)
-- [Am I Responsive](http://ami.responsivedesign.is/) - Checks for responsive website and mockup image generator.
-- [Color palette resources](https://coolors.co) 
+### Tools and Resources
+- [Wirefames by Balsamiq](https://balsamiq.com/wireframes/) - to create professional looking wire frames
+- [Am I Responsive](http://ami.responsivedesign.is/) - to checks for responsive website and mockup image generator.
+- [Color palette resources](https://coolors.co) - to create color palette
 - [Markdown table generator](https://www.tablesgenerator.com/markdown_tables)
-- [Markdown table of contents](http://ecotrust-canada.github.io/markdown-toc/)
+- [Markdown table of contents](http://ecotrust-canada.github.io/markdown-toc/) to create table of contents
 - [Youtube](https://www.youtube.com/watch?v=rz_8NDyC6Xk)- General resource.
 - [Stack Overflow](https://stackoverflow.com/) - General resource.
 - [W3Schools Online Web Tutorials](https://www.w3schools.com/)
-- [Materialize - front-end framework based on Material Design](https://materializecss.com/) 
-- [MongoDB The application data platform](https://www.mongodb.com/)
-- [Heroku cloud Platform](https://www.heroku.com/home)
 - [ImgBB -free image hosting and sharing service](https://imgbb.com/)
 
 ## Testing
