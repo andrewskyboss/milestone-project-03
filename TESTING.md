@@ -36,8 +36,18 @@ The website is used a small amount of direct Javascript coding
 - All variables were fixed or ignored, as code is working properly
 
 ### Python
-  - [Python Syntax Checker](https://extendsclass.com/python-tester.html) was using to validate app.py file's code syntax error
-  - [Python PEP8 requirements](http://pep8online.com/) was using to validate app.py file's code syntax error
+- [Python Syntax Checker](https://extendsclass.com/python-tester.html) was using to validate app.py file's code syntax error
+  - No syntax errors detected 
+
+- [Python PEP8 requirements](http://pep8online.com/) was using to validate app.py file for PEP8 requirements.
+  - The following warning messages were received:
+    - E125 continuation line with same indent as next logical line
+    - E128 continuation line under-indented for visual indent
+    - E303 too many blank lines
+    - W291 trailing whitespace
+    - W292 no newline at end of file
+
+- All errors were fixed
 
 
 ## GENERAL (Manual testing)
