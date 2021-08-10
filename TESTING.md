@@ -23,22 +23,17 @@ Following resources were used for code validation
 
 
 ### CSS
- - Ran CSS code through [W3C CSS Validation Service](https://validator.w3.org/) for code warning & error check.
-   - Everything is coded properly. Few Warning message were received:
-   - Warning, for imported fonts, their style sheets are not checked in direct input and file upload modes. This warning is ignored.
-   -  Warning, for color variables as an unknown vendor extension. This warning is ignored
-   - No errors found.
-   - Relevant logos are placed on homepage footer
+- Ran CSS code through [W3C CSS Validation Service](https://validator.w3.org/) for code warning & error check.
+  - No errors found.
+  - Relevant logos are placed on homepage footer
 
 ### JavaScript
 - Ran JavaScript code through [JavaScript JSHINT Service](https://jshint.com/) for code warning & error check.
-   - The following (general) Warning messages were received:
-   - Missing semicolon
-   - Undefined variables such as google, toggleBounce, initMap.
-   - The body of a for in should be wrapped in an if statement to filter unwanted properties from the prototype.
+The website is used a small amount of direct Javascript coding
+  - The following (general) Warning messages were received:
+  - Undefined variables
 
- - All semicolon were added. All variables were fixed or ignored, as code is working properly
-For loop was not wrapped into if statement, because it was not necessary by functionality.
+- All variables were fixed or ignored, as code is working properly
 
 ### Python
   - [Python Syntax Checker](https://extendsclass.com/python-tester.html) was using to validate app.py file's code syntax error
