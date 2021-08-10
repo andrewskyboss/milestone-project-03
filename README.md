@@ -302,14 +302,14 @@ To deploy this project, the following steps were taken:
 
 ### Content
 
-
-
+- [Nisbets](https://www.nisbets.ie/) Ireland's largest supplier of catering equipment
+- [The Kitchen Whisk](https://www.thekitchenwhisk.ie/) is a specialised kitchenware shop
 
 ### Media
 
 - The images used in this project were obtained from the [Megapixl resources](https://www.megapixl.com)
 - Icons [Font Awesome](https://fontawesome.com/v4.7.0/)
-- SVG icons - base is taken from [Megapixl resources](https://www.megapixl.com) and modified on [Adobe Illustrator](https://www.adobe.com/products/illustrator.html)
+- SVG logo and favicon - base is taken from [Megapixl resources](https://www.megapixl.com) and modified on [Adobe Illustrator](https://www.adobe.com/products/illustrator.html)
 - Image optimisation - self-made on [Adobe Photoshop](https://www.adobe.com/products/photoshop.html)
 
 ### Code Snippets and Tutorials
