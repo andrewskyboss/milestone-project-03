@@ -211,6 +211,13 @@ All planned features are implemented and working properly
 #### Future Features
 
 Features to be implemented in the future:
+- Add cuisine locations on the map
+- Add recipe search on map functionality
+- Add recipe to user favourites
+- Preview and manage favourite’s collection
+- Add image upload functionality
+- Integrate partners adds to website
+
 
 
 ## Technologies Used
