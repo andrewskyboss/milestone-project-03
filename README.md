@@ -222,33 +222,28 @@ Features to be implemented in the future:
 
 ## Technologies Used
 
-3rd party technologies to list:
-- Wirefames by Balsamiq to get quick preview of the project
-- Color palette resources to get a visual representation of all branding colors 
-- Images were taken from the Megapixl resources to get illustrations and logos for the website
-- Font Awesome Icons to represent social media in graphic way
-- Google Fonts
-- Markdown table generator
-- Markdown table of contents
-- Materialize - by linking via Materialize CDN to HTML Doc
+The following languages, frameworks, libraries, and other tools were used to construct this project:
 
+### Programing Languages
+- [HTML](https://www.w3schools.com/html/default.asp) The project uses **HTML** to define DOM elements.
+- [CSS](https://www.w3schools.com/w3css/default.asp) The project uses **CSS** to define DOM appearance.
+- [JavaScript](https://www.javascript.com) The project uses **JavaScript** to interact with content. 
+- [Python](https://www.python.org) The project uses **Python+Flask** to manipulate with content.
+- [Markdown](https://www.markdownguide.org/) Documentation within the readme was generated using markdown.
 
-### Frameworks and Extensions
-- [Materialize](https://materializecss.com/)
+### Frameworks and Libraries:
+- [Materialize](https://materializecss.com/) In the project were used **Materialize** libraries for styling, layout and typography.
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) In the project were used **Flask** framework to build the web application.
+- [MongoDB](https://www.mongodb.com/) In the project were used **MongoDB** to store data objects.
+- [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) In the project were used **Flask-PyMongo** extension to access MongoDB from flask.
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) In the project were used **Werkzeug** libraries to hash passwords and secure filenames.
+- [Heroku](https://heroku.com/) In the project were used **Heroku** cloud platform for deployment.
 
 ### Fonts
 - Google Fonts:
   - [Dancing Script font can be found here](https://fonts.google.com/specimen/Dancing+Script)
   - [Raleway  font can be found here](https://fonts.google.com/specimen/Raleway)
 
-
-### Programing Languages
-- [HTML](https://www.w3schools.com/html/default.asp) The project uses **HTML** to define DOM elements.
-- [CSS](https://www.w3schools.com/w3css/default.asp) The project uses **CSS** to define DOM appearance.
-- [JavaScript](https://www.javascript.com) The project uses **JavaScript** to interact with content. 
-- [Python+Flask](https://jquery.com) The project uses **Python+Flask** to manipulate with content.
-- [MongoDB](https://www.json.org/json-en.html) The project uses **MongoDB** to store and transmit data objects.
-- [Markdown](https://www.markdownguide.org/) Documentation within the readme was generated using markdown.
 
 ## Tools and Resources
 - [Wirefames by Balsamiq](https://balsamiq.com/wireframes/)
