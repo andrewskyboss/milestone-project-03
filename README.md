@@ -272,6 +272,7 @@ Details of testing can be found in a separate document
   - [W3C Markup Validation Service](https://validator.w3.org/) was using on this project.
   - [JavaScript JSHINT Service](https://jshint.com/) was using for code warning & error check
   - [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) was using to validate all tags
+  - [Python Syntax Checker](https://extendsclass.com/python-tester.html) was using to validate app.py file's code syntax error
 
 ## Version Control
  - Used Git for version control.
