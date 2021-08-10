@@ -238,6 +238,7 @@ The following languages, frameworks, libraries, and other tools were used to con
 - [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) In the project were used **Flask-PyMongo** extension to access MongoDB from flask.
 - [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) In the project were used **Werkzeug** libraries to hash passwords and secure filenames.
 - [Heroku](https://heroku.com/) In the project were used **Heroku** cloud platform for deployment.
+- [GitHub](https://github.com) In the project were used **GitHub** hosting platform for version control.
 
 ### Fonts
 - Google Fonts:
