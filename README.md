@@ -273,6 +273,7 @@ Details of testing can be found in a separate document
   - [JavaScript JSHINT Service](https://jshint.com/) was using for code warning & error check
   - [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) was using to validate all tags
   - [Python Syntax Checker](https://extendsclass.com/python-tester.html) was using to validate app.py file's code syntax error
+  - [Python PEP8 requirements](http://pep8online.com/) was using to validate app.py file's code for PEP8 requirements
 
 ## Version Control
  - Used Git for version control.
