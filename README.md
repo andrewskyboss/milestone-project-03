@@ -283,15 +283,20 @@ Details of testing can be found in a separate document
 
 This project was developed using open source Heroku cloud Platform.
 To deploy this project, the following steps were taken:
-1. Login into GitHub
-2.
+1.  Inside GitHub application create requirements.txt file to put all required files there (pip freeze > requirements.txt)
+2.  Inside GitHub application create Procfile to let Heroku know what file runs the application, (add there web: python app.py)
+3.  Create an account on Heroku and create a new app. Follow all proposed steps
+4.  Choose deployment method GitHub repository
+5.  Connect to GitHub section make sure your GitHub profile is displayed
+6.  Add repository name and click search
+7.  When it is found, click connect button
+8.  Go to the app settings on Heroku and click 'Reveal Config Vars'
+9.  Add the required keys as they are in your local env.py (i.e IP, MONGO_DBNAME, MONGO_URI, PORT, SECRET_KEY )
+10. In the Deployment tab enable Automatic Deployment
+11. Deploy a GitHub branch choose your branch and press “Deploy Branch” button
+12. After done and displaying sign “Your app was successfully deployed” click view to launch a new app
+13. Deployed site is now available and should automatically update on any changes
 
-
-How to run project locally:
-
-To clone this project into Gitpod you will need to do following steps:
-1.
-2.
 
 ## Credits
 
