@@ -241,9 +241,10 @@ The following languages, frameworks, libraries, and other tools were used to con
 - [GitHub](https://github.com) In the project were used **GitHub** hosting platform for version control.
 
 ### Fonts
-- Google Fonts:
-  - [Dancing Script font can be found here](https://fonts.google.com/specimen/Dancing+Script)
-  - [Raleway  font can be found here](https://fonts.google.com/specimen/Raleway)
+Google Fonts:
+
+- [Dancing Script font can be found here](https://fonts.google.com/specimen/Dancing+Script)
+- [Raleway  font can be found here](https://fonts.google.com/specimen/Raleway)
 
 
 ### Tools and Resources
