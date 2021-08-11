@@ -157,6 +157,9 @@ def add_recipe():
 # edit recipe function
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    if 'user' not in session:
+        flash('You need to log in to edit a recipe.')
+        return redirect(url_for('login'))
 
     if request.method == "POST":
         submit = {
@@ -166,7 +169,6 @@ def edit_recipe(recipe_id):
             "ingredients": request.form.get("ingredients"),
             "preparation_steps": request.form.get("preparation_steps"),
             "image_url": request.form.get("image_url"),
-            # "img_description": request.form.get("img_description"),
             "tools": request.form.get("tools"),
             "created_by": session["user"]
         }
@@ -207,6 +209,10 @@ def get_categories():
 # adding category
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
+    if 'user' not in session:
+        flash('You need to log in to add a category.')
+        return redirect(url_for('login'))
+
     if request.method == "POST":
         category = {
             "category_name": request.form.get("category_name")
@@ -221,6 +227,10 @@ def add_category():
 # edit category
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
+    if 'user' not in session:
+        flash('You need to log in to edit a category.')
+        return redirect(url_for('login'))
+
     if request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name")
@@ -236,6 +246,10 @@ def edit_category(category_id):
 # delete category
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
+    if 'user' not in session:
+        flash('You need to log in to delete a category.')
+        return redirect(url_for('login'))
+
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash("Category is Successfully Deleted")
     return redirect(url_for("get_categories"))
@@ -251,6 +265,10 @@ def get_cuisines():
 # adding cuisine
 @app.route("/add_cuisine", methods=["GET", "POST"])
 def add_cuisine():
+    if 'user' not in session:
+        flash('You need to log in to add a cuisine.')
+        return redirect(url_for('login'))
+
     if request.method == "POST":
         cuisine = {
             "cuisine_name": request.form.get("cuisine_name")
@@ -265,6 +283,10 @@ def add_cuisine():
 # edit cuisine
 @app.route("/edit_cuisine/<cuisine_id>", methods=["GET", "POST"])
 def edit_cuisine(cuisine_id):
+    if 'user' not in session:
+        flash('You need to log in to edit a cuisine.')
+        return redirect(url_for('login'))
+
     if request.method == "POST":
         submit = {
             "cuisine_name": request.form.get("cuisine_name")
@@ -280,6 +302,10 @@ def edit_cuisine(cuisine_id):
 # delete cuisine
 @app.route("/delete_cuisine/<cuisine_id>")
 def delete_cuisine(cuisine_id):
+    if 'user' not in session:
+        flash('You need to log in to delete a cuisine.')
+        return redirect(url_for('login'))
+
     mongo.db.cuisine.remove({"_id": ObjectId(cuisine_id)})
     flash("Cuisine is Successfully Deleted")
     return redirect(url_for("get_cuisines"))
