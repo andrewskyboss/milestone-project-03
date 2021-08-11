@@ -346,9 +346,21 @@ def get_stats():
         "stats.html", stats_dict=stats_dict, length_list=length_list)
 
 
+# runs 404 page
+@app.errorhandler(404)
+def error404(e):
+    return render_template('404.html'), 404
+
+
+# runs 500 page
+@app.errorhandler(500)
+def error500(e):
+    flash('Server Error 500.')
+    return render_template('404.html'), 500
+
+
 # runs application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
-
