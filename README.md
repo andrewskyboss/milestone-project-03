@@ -322,6 +322,7 @@ To deploy this project, the following steps were taken:
 - Code Institute Tutorials [Display User Profile Page](https://www.youtube.com/watch?v=1rfV6CPcFX0)
 - Code Institute Tutorials [Logging Out](https://www.youtube.com/watch?v=7zEIYYHsTHA)
 - Code Institute Tutorials [Add Categories To MongoDB](https://www.youtube.com/watch?v=vvt8RZPDeDg)
+- Tutorial to round decimals [Stack overflow](https://stackoverflow.com/questions/11260155/how-to-use-float-filter-to-show-just-two-digits-after-decimal-point)
 
 ### Acknowledgments
 
