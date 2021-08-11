@@ -16,7 +16,7 @@ Andrej Cybovskij
 ![picture of site](assets/images/responsive.png)
 - Creative Cooking is an online cookbook website. 
 - The main idea of this website is to allow users to find and share different kind of recipes. Everybody have possibility to search and use recipes from this website. To share their own recipes, every potential user needs to create personal account and add recipes for sharing. As well, registered users could manage their recipes from their personal profile. That includes updates and delete recipes. 
-- Website recipes have a categories and cuisines options to choose. The website admin only has access to manage categories and cuisines groups. He can add, update or delete them. 
+- Website recipes have a categories and cuisines options to choose. The website admin only has access to manage categories and cuisines groups. (username: admin, password: admin) He can add, update or delete them. 
 - The website has a dashboard with some stats information about recipes placed in the website.
 - As well, website has a page with links to promote partners websites.
 
