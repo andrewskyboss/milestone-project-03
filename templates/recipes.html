@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
+    <!-- Page Title -->
     <h1 class="title red-text text-darken-1 center-align">Recipes</h1>
-
+    <!-- Search Box -->
     <div class="row card-panel grey lighten-5 search-box-container">
         <form action="{{ url_for('search') }}" method="post" class="col s10 offset-s1 search-box">
             <div class="row valign-wrapper center-align">
@@ -19,20 +20,25 @@
             </div>
         </form>
     </div>
-
-
+    <!-- Recipes Section -->
     <div class="container-fluid">
+        <!-- Loop Through Recipes -->
         {% if recipe|length > 0 %}
         <div class="row image-text-row-recipes">
             {% for recipe in recipe %}
             <div class="col s12 m12 l6 image-text-col-recipe recipes">
+                <!-- Recipe Image -->
                 <div class="col s12 m12 l6 image-area-recipes">
                     <img class="recipe-image responsive-img" src="{{ recipe.image_url }}" alt="{{ recipe.dish_name }}">
                 </div>
                 <div class="col s12 m12 l6 content-area"> 
+                    <!-- Recipe Name -->
                     <h3 class="subtitle light-green-text text-darken-3 center-align">{{ recipe.dish_name }}</h3>
+                    <!-- Recipe category -->
                     <p class="subtitle-category"><strong>Category: </strong> {{ recipe.category_name }}</p>
+                    <!-- Recipe Cuisine -->
                     <p class="subtitle-cuisine"><strong>Cousine: </strong> {{ recipe.cuisine_name }}</p>
+                    <!-- Full recipe button -->
                     <a href="{{ url_for('get_recipe', recipe_id=recipe._id) }}" class="col s8 offset-m1 btn-large light-green darken-3 text-shadow button-recipes">Full Recipe:</a>
 
                 </div>
@@ -41,6 +47,7 @@
             {% endfor %}
         </div>
         {% else %}
+            <!-- If no recipes -->
             <h3 class="red-text text-darken-1 center-align">Unfortunately no Results Found</h3>
         {% endif %}
     </div>
