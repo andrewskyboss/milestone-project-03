@@ -42,7 +42,6 @@ header {
 
 h1, h2, h3 {
     font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
 }
 
 h1 {font-size: 52px;}
