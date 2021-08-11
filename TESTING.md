@@ -14,13 +14,11 @@ Following resources were used for code validation
 ### HTML
 
 - Ran HTML code through [W3C Markup Validation Service](https://validator.w3.org/) for code warning & error check.
- - Everything is coded properly. Few Warning message were received:
- - **Warning**, there was an unnecessary type attribute for JavaScript resources (the attribute was removed)
- - **Warning**, there was an empty headings for h2 id="confirmation-title" and h3 id="confirmation-title-email". As they are used to display confirmation message on form submit, they are left empty.
- - **Error**, there was empty value for attribute src on element img. As it is used as a placeholder for the Gallery light box image, everything is left as it is.
+  - One Warning message were received:
+    - **Warning**: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
 
-- [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) was using to validate all tags 
-
+- [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) was using to validate all tags
+  - No unclosed tags detected.
 
 ### CSS
 - Ran CSS code through [W3C CSS Validation Service](https://validator.w3.org/) for code warning & error check.
@@ -31,7 +29,7 @@ Following resources were used for code validation
 - Ran JavaScript code through [JavaScript JSHINT Service](https://jshint.com/) for code warning & error check.
 The website is used a small amount of direct Javascript coding
   - The following (general) Warning messages were received:
-  - Undefined variables
+    - Undefined variables
 
 - All variables were fixed or ignored, as code is working properly
 
@@ -46,7 +44,6 @@ The website is used a small amount of direct Javascript coding
     - E303 too many blank lines
     - W291 trailing whitespace
     - W292 no newline at end of file
-
 - All errors were fixed
 
 
