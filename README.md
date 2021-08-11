@@ -315,10 +315,18 @@ To deploy this project, the following steps were taken:
 
 ### Code Snippets and Tutorials
 
-
+- [Materialize & Static Files Setup](https://www.youtube.com/watch?v=7R0qJ7QJ2-U) were created using [Code Institute Tutorials](https://www.youtube.com/watch?v=7R0qJ7QJ2-U)
+- Code Institute Tutorials [User Authentication And Authorization 1](https://www.youtube.com/watch?v=r4qlVU20Aoc&t=357s)
+- Code Institute Tutorials [User Authentication And Authorization 2](https://www.youtube.com/watch?v=Sfkg3358Igc&t=228s)
+- Code Institute Tutorials [Login Functionality](https://www.youtube.com/watch?v=KzReYjMAgn8&t=14s)
+- Code Institute Tutorials [Display User Profile Page](https://www.youtube.com/watch?v=1rfV6CPcFX0)
+- Code Institute Tutorials [Logging Out](https://www.youtube.com/watch?v=7zEIYYHsTHA)
+- Code Institute Tutorials [Add Categories To MongoDB](https://www.youtube.com/watch?v=vvt8RZPDeDg)
 
 ### Acknowledgments
 
 I would like to thank:
 - My mentor [Malia Havlicek](https://code-institute-room.slack.com/team/UERRFE54G) for help in testing, review and invaluable advices.
-- Code Institute for mail service [tutorials](https://www.youtube.com/watch?v=KaAeh4Risrc&t=234s)
+- Code Institute for Flask Mini-Project [tutorial](https://www.youtube.com/watch?v=y72Dq3GRxhc&t=14s)
+- Code Institute for Flask Mini-Project [tutorial 2](https://www.youtube.com/watch?v=Z4caY2YtQLY&t=9s)
+
