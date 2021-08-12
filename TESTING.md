@@ -55,33 +55,84 @@ The website is used a small amount of direct Javascript coding
   - Clicked on Stats navigation element, it goes to the relevant page.
   - Clicked on Partners navigation element, it goes to the relevant page.
   - Clicked on Log In navigation element, it goes to the relevant page.
-  - Clicked on Log In navigation element, it goes to the relevant page.
-  - Clicked on View More Button in Each Grid element, all of them goes to the relevant page.
-  - Added email to Newsletter sign up field and Clicked on Sign Up Button, the page is connected to dummy Code Institute mail service.
-  - Clicked on Social links icons in the footer, each icon goes to the relevant page.   - Clicked on Social links icons in the footer, each icon goes to the relevant page.
+  - Clicked on Register navigation element, it goes to the relevant page.
+  - Clicked on Read More Button in Each Grid element, all of them goes to the relevant page.
+  - Clicked on Social links icons in the footer, each icon goes to the relevant page.
 
 **Recipes Page**
   - Clicked on header Logo icon, it goes to Home page.
   - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - Added text to search box, it works properly
+  - Added not searchable text, Result not found sign is displayed
+  - Clicked on Full Recipe Button in Each Grid element, all of them goes to the relevant page.
 
 
 **Stats Page**
   - Clicked on header Logo icon, it goes to Home page.
   - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - Clicked on Read more Button it goes to the relevant page.
 
 
 **Partners Page**
   - Clicked on header Logo icon, it goes to Home page.
   - Clicked on every header navigation elements, all of them goes to the relevant page.
-
-
-**Log In Page**
-  - Clicked on header Logo icon, it goes to Home page.
-  - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - Clicked on Visit Shop Button in Each Grid element, all of them goes to the relevant page.
 
 **Register Page**
   - Clicked on header Logo icon, it goes to Home page.
   - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - Filled up form and submitted, it goes to user profile page.
+
+**Log In Page**
+  - Clicked on header Logo icon, it goes to Home page.
+  - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - Filled up form and submitted, it goes to user profile page.
+
+**After login:**
+**Profile Page**
+  - Clicked on header Logo icon, it goes to Home page.
+  - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - Clicked on Full Recipe Button in Each Grid element, all of them goes to the relevant page.
+  - Clicked on Manage Category Button it goes to the relevant page.
+  - Clicked on Manage Cuisine Button it goes to the relevant page.
+
+**Single Recipe Page**
+  - Clicked on header Logo icon, it goes to Home page.
+  - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - Clicked on Edit Button it goes to the relevant page.
+  - Clicked on Remove Recipe Button it goes to the relevant page.
+
+**Add Recipe Page**
+  - Clicked on header Logo icon, it goes to Home page.
+  - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - After adding content to all fields and Clicked on Add Recipe Button it goes to the relevant page.
+  - Clicked on Clear Button it clears all fields.
+
+**Manage Category Page**
+  - Clicked on header Logo icon, it goes to Home page.
+  - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - Clicked on Add Category Button it goes to the relevant page.
+  - Clicked on Edit Button on every category card it goes to the relevant page.
+  - Clicked on Delete Button on every category card it goes to the relevant page and delete category.
+
+**Add Category Page**
+  - Clicked on header Logo icon, it goes to Home page.
+  - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - After adding content to the field and Clicked on Add Category Button it goes to the relevant page.
+  - Clicked on Clear Button it clears the field.
+
+**Manage Cuisine Page**
+  - Clicked on header Logo icon, it goes to Home page.
+  - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - Clicked on Add Cuisine Button it goes to the relevant page.
+  - Clicked on Edit Button on every cuisine card it goes to the relevant page.
+  - Clicked on Delete Button on every cuisine card it goes to the relevant page and delete cuisine.
+
+**Add Cuisine Page**
+  - Clicked on header Logo icon, it goes to Home page.
+  - Clicked on every header navigation elements, all of them goes to the relevant page.
+  - After adding content to the field and Clicked on Add Cuisine Button it goes to the relevant page.
+  - Clicked on Clear Button it clears the field.
 
 ### Cross Browser and Cross Device Testing
 
@@ -110,16 +161,4 @@ Testing was done for the following devices:
 [link to check a website to be responsive](http://ami.responsivedesign.is)
 ![picture of site](assets/images/responsive.png)
 
-### Testing stories from UX perspectives:
 
-- As a user, I have:
-  1. Ability to easily find out what or who the site is for.
-  2. Ability to easily navigate the website.
-  3. Ability to find recipes.
-  4. Ability to get recipe's full details.
-  5. Ability to create account.
-  6. Ability to update account.
-  7. Ability to login into account.
-  8. Ability to add new recipe.
-  9. Ability to edit my recipe.
-  10. Ability to get in touch with website admin or owner.
