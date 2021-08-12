@@ -161,4 +161,9 @@ Testing was done for the following devices:
 [link to check a website to be responsive](http://ami.responsivedesign.is)
 ![picture of site](assets/images/responsive.png)
 
+## Lighthouse performance
+![Lighthouse Performance](assets/images/lighthouse2.png)
+
+## Defect Tracking
+
 
