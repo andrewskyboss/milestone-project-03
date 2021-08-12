@@ -166,6 +166,6 @@ Testing was done for the following devices:
 
 ## Defect Tracking
 - It was discovered security errors. To limit access on routes it was added user session check functionality to avoid it.
-- It was discovered problem with performance in this project. It was using http/1.1 protocol instead off http/2. This it feature fix.
+- It was discovered problem with performance in this project. It was using http/1.1 protocol instead off http/2. This it future fix.
 - It was discovered problem to upload images to Heroku. Currently proposed to use external image storing and placing external image URL. It is a future fix.
 
