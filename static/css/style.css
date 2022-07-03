@@ -63,6 +63,7 @@ nav ul a {
     padding: 13px 15px;
     background-color: transparent;
     transition: all 0.8s ease;
+    cursor: pointer;
 }
 
 nav ul a.user-link,
