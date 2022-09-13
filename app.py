@@ -1,3 +1,6 @@
+"""
+    starts
+"""
 import os
 from flask import (
     Flask, flash, render_template,
@@ -21,18 +24,21 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_homepage")
 def get_homepage():
+    """homepage function"""
     return render_template("index.html")
 
 
 @app.route("/")
 @app.route("/get_partners")
 def get_partners():
+    """partners page function"""
     return render_template("partners.html")
 
 
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
+    """recipes function"""
     recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipe=recipes)
 
@@ -40,6 +46,7 @@ def get_recipes():
 # search function
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """search function"""
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipe=recipes)
@@ -48,6 +55,7 @@ def search():
 # code is based on mini project tutorial
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """register user function"""
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
@@ -73,6 +81,7 @@ def register():
 # code is based on mini project tutorial
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """login function"""
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
@@ -102,6 +111,7 @@ def login():
 # loads users profile function
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    """profile function"""
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     recipes = list(mongo.db.recipes.find({"created_by": username}))
@@ -118,6 +128,7 @@ def profile(username):
 # code is based on mini project tutorial
 @app.route("/logout")
 def logout():
+    """logout function"""
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
@@ -126,6 +137,7 @@ def logout():
 # add new recipe to database
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
+    """add recipe function"""
     if 'user' not in session:
         flash('You need to log in to add a recipe.')
         return redirect(url_for('login'))
@@ -156,6 +168,7 @@ def add_recipe():
 # edit recipe function
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    """edit recipe function"""
     if 'user' not in session:
         flash('You need to log in to edit a recipe.')
         return redirect(url_for('login'))
@@ -187,6 +200,7 @@ def edit_recipe(recipe_id):
 # get single recipe
 @app.route("/get_recipe/<recipe_id>")
 def get_recipe(recipe_id):
+    """get recipe function"""
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("recipe.html", recipe=recipe)
 
@@ -194,6 +208,7 @@ def get_recipe(recipe_id):
 # delete recipe function
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
+    """delete recipe function"""
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe is Successfully Deleted")
     return redirect(url_for("get_recipes"))
@@ -202,6 +217,7 @@ def delete_recipe(recipe_id):
 # get categories from database
 @app.route("/get_categories")
 def get_categories():
+    """get category function"""
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
@@ -209,6 +225,7 @@ def get_categories():
 # adding category
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
+    """add category function"""
     if 'user' not in session:
         flash('You need to log in to add a category.')
         return redirect(url_for('login'))
@@ -227,6 +244,7 @@ def add_category():
 # edit category
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
+    """edit category function"""
     if 'user' not in session:
         flash('You need to log in to edit a category.')
         return redirect(url_for('login'))
@@ -246,6 +264,7 @@ def edit_category(category_id):
 # delete category
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
+    """delete category function"""
     if 'user' not in session:
         flash('You need to log in to delete a category.')
         return redirect(url_for('login'))
@@ -258,6 +277,7 @@ def delete_category(category_id):
 # get cuisines from database
 @app.route("/get_cuisines")
 def get_cuisines():
+    """get cuisines function"""
     cuisines = list(mongo.db.cuisine.find().sort("cuisine_name", 1))
     return render_template("cuisines.html", cuisines=cuisines)
 
@@ -265,6 +285,7 @@ def get_cuisines():
 # adding cuisine
 @app.route("/add_cuisine", methods=["GET", "POST"])
 def add_cuisine():
+    """add cuisines function"""
     if 'user' not in session:
         flash('You need to log in to add a cuisine.')
         return redirect(url_for('login'))
@@ -283,6 +304,7 @@ def add_cuisine():
 # edit cuisine
 @app.route("/edit_cuisine/<cuisine_id>", methods=["GET", "POST"])
 def edit_cuisine(cuisine_id):
+    """edit cuisines function"""
     if 'user' not in session:
         flash('You need to log in to edit a cuisine.')
         return redirect(url_for('login'))
@@ -302,6 +324,7 @@ def edit_cuisine(cuisine_id):
 # delete cuisine
 @app.route("/delete_cuisine/<cuisine_id>")
 def delete_cuisine(cuisine_id):
+    """detete cuisines function"""
     if 'user' not in session:
         flash('You need to log in to delete a cuisine.')
         return redirect(url_for('login'))
@@ -314,6 +337,7 @@ def delete_cuisine(cuisine_id):
 # calls contact us page
 @app.route("/contact_us", methods=["GET", "POST"])
 def contact_us():
+    """contact us function"""
     if request.method == "POST":
         flash("Thanks {}, we have received your message!".format(
             request.form.get("name")))
@@ -324,6 +348,7 @@ def contact_us():
 @app.route("/")
 @app.route("/get_stats")
 def get_stats():
+    """get stats function"""
     stats_dict = {}
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     all_recipes = list(mongo.db.recipes.find())
@@ -349,12 +374,14 @@ def get_stats():
 # runs 404 page
 @app.errorhandler(404)
 def error404(e):
+    """get error 404 function"""
     return render_template('404.html'), 404
 
 
 # runs 500 page
 @app.errorhandler(500)
 def error500(e):
+    """get error 500 function"""
     flash('Server Error 500.')
     return render_template('404.html'), 500
 
